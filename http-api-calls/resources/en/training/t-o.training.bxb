@@ -1,0 +1,9 @@
+train (t-o6e9kcuy5qfgd5fghpqhbip95) {
+  utterance ([g:poopInPants] poop)
+  plan (Y2BiEEytSMwtyEnVyygpKdAryM8vYJDAEPLMC0jMKylmYARCBigGkgA=)
+  last-modified (1551321286512)
+}
+train (t-og7kopsjlqplp7zh6evxappv0) {
+  utterance ([g:FindShoe] Find shoes with a simple HTTP call)
+  plan (Y2Bi4E/KrEiq1MsoKSnQC87IT2UQRhJwy8xLAQsyAiEDFANJAA==)
+}

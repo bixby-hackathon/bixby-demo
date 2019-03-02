@@ -1,0 +1,7 @@
+enum (poopType) {
+  description (types of poop)
+  symbol (Diarrhea)
+  symbol (Small and concerning)
+  symbol (Large and relieving)
+  symbol (Chunky)
+}

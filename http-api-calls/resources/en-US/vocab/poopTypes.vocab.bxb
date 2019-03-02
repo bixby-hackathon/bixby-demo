@@ -1,0 +1,6 @@
+vocab (poopType) {
+  "Diarrhea" {"Diarrhea", "Runny Stool", "Wet Poop"}
+  "Small and concerning" {"Small and concerning", "Bunny Poop", "Really Small"}
+  "Large and relieving" {"Large and relieving", "Huge Poop", "Big Poop", "Large Poop"}
+  "Chunky" {"Chunky"}
+}

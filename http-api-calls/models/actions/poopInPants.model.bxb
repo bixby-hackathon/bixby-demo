@@ -1,0 +1,10 @@
+action (poopInPants) {
+  description (poop in pants)
+  collect {
+    input (poopWhatever) {
+      type (poopType)
+      min (Required) max (One)
+    }
+  }
+  output (poop)
+}
