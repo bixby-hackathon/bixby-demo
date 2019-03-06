@@ -1,0 +1,72 @@
+layout-macro-def(pokemon-details-macro) {
+  params {
+    param (pokemon) {
+      type (Pokemon)
+      min (Required)
+      max (One)
+    }
+  }
+
+  content {
+    section {
+      content {
+        title-area {
+          slot1 {
+            text {
+              value {
+                template ("#{value (pokemon.name)}")
+              }
+            }
+          }
+        }
+        single-line{
+          text {
+            value ("#{value (pokemon.name)}")
+          }
+        }
+        image {
+          url ("#{value (pokemon.sprite)}")
+          size (M)
+        }
+        single-line {
+          text {
+            value ("Pokedex Number: #{value (pokemon.id)}")
+            style (Detail_L)
+          }
+        }
+        single-line {
+          text {
+            value ("Height: #{value (pokemon.height)}")
+            style (Detail_M)
+          }
+        }
+        single-line {
+          text {
+            value ("Weight: #{value (pokemon.weight)}")
+            style (Detail_M)
+          }
+        }
+        paragraph {
+          value {
+            template ("HP: #{value (pokemon.statHp)}")
+            template ("Att: #{value (pokemon.statAttack)}")
+            template ("Def: #{value (pokemon.statDefense)}")
+            template ("SpA: #{value (pokemon.statSpecialAttack)}")
+            template ("SpD: #{value (pokemon.statSpecialDefense)}")
+            template ("Spe: #{value (pokemon.statSpeed)}")
+          }
+        }
+        paragraph {
+          value {
+            template ("#{value (pokemon.url)}")
+          }
+        }
+        paragraph {
+          value {
+            template ("Hi I clicked on this and now its work")
+          }
+        }
+      }
+    }
+  }
+}

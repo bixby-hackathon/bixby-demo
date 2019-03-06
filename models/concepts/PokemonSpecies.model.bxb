@@ -1,0 +1,7 @@
+enum (PokemonSpecies) {
+  description (species of pokemon)
+  symbol (bulbasaur)
+  symbol (charmander)
+  symbol (squirtle)
+  symbol (pikachu)
+}

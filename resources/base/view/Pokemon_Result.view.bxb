@@ -1,0 +1,25 @@
+result-view {
+  match {
+    Pokemon (this)
+  }
+  
+  render {
+    if ("size(this) > 1") {
+      list-of (this) {
+        where-each (pokemon) {
+          layout-macro (pokemon-list-macro) {
+            param (pokemon) {
+              expression (pokemon)
+            }
+          }
+        }
+      }
+    } else-if ("size(this) == 1") {
+      layout-macro (pokemon-details-macro) {
+        param (pokemon) {
+          expression (this)
+        }
+      }
+    }
+  }
+}

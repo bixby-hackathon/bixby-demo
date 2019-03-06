@@ -1,0 +1,5 @@
+train (t-lnje574bq0stzizuthlydmotf) {
+  utterance ("[g:FindPokemon] Show me a (Bulbasaur)[v:PokemonSpecies:bulbasaur]")
+  plan (Y2BmEEmtSMwtyEnVyygpKdALyM9Ozc3PY5BAEXXLzEuByUhjUx9ckJqcmVrMwMTACMQMQJKRAQSgfAA=)
+  last-modified (1551842570007)
+}

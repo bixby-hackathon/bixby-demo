@@ -1,0 +1,30 @@
+layout-macro-def(pokemon-list-macro) {
+  params {
+    param (pokemon) {
+      type (Pokemon)
+      min (Required)
+      max (One)
+    }
+  }
+
+  content {
+    compound-card {
+      content {
+        title-area {
+          slot1 {
+            text {
+              value {
+                template ("Hello I'm #{value (pokemon.name)}")
+              }
+            }
+          }
+        }
+        paragraph {
+          value {
+            template ("#{value (pokemon.url)}")
+          }
+        }
+      }
+    }
+  }
+}

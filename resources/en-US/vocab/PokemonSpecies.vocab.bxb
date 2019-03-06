@@ -1,0 +1,6 @@
+vocab (PokemonSpecies) {
+  "bulbasaur" {"bulbasaur" "bulb a sore" "Green Frog Thing"}
+  "charmander" {"charmander" "char man Der" "fire"}
+  "squirtle" {"squirtle" "turtle" "Squire Toll"}
+  "pikachu" {"pikachu" "mouse"}
+}

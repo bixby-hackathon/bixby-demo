@@ -1,0 +1,54 @@
+structure (Pokemon) {
+  property (name) {
+    type (Name)
+    min (Optional)
+  }
+  property (url) {
+    type (Url)
+    min (Optional)
+  }
+  property (sprite) {
+    type (Sprite)
+    min (Optional)
+  }
+  property (id){
+    type(Id)
+    min (Optional)
+  }
+  property (species) {
+    type (Species)
+    min (Optional)
+  }
+  property (height){
+    type(Height)
+    min (Optional)
+  }
+  property (weight){
+    type(Weight)
+    min (Optional)
+  }
+  property (statHp){
+    type(StatHp)
+    min (Optional)
+  }
+  property (statAttack){
+    type(StatAttack)
+    min (Optional)
+  }
+  property (statDefense){
+    type(StatDefense)
+    min (Optional)
+  }
+  property (statSpecialAttack){
+    type(StatSpecialAttack)
+    min (Optional)
+  }
+  property (statSpecialDefense){
+    type(StatSpecialDefense)
+    min (Optional)
+  }
+  property (statSpeed){
+    type(StatSpeed)
+    min (Optional)
+  }
+}

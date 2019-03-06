@@ -1,0 +1,10 @@
+endpoints {
+
+  action-endpoints {
+    
+    action-endpoint (FindPokemon) {
+      accepted-inputs (pokemonName)
+      local-endpoint (FindPokemon.js)
+    }
+  }
+}
