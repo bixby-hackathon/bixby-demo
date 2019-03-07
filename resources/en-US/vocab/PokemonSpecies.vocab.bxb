@@ -1,6 +1,30 @@
 vocab (PokemonSpecies) {
-  "bulbasaur" {"bulbasaur" "bulb a sore" "Green Frog Thing"}
-  "charmander" {"charmander" "char man Der" "fire"}
-  "squirtle" {"squirtle" "turtle" "Squire Toll"}
-  "pikachu" {"pikachu" "mouse"}
+  "bulbasaur" {"bulbasaur" "Bulbasaur" "bulb a sore" "Green Frog Thing"}
+    "ivysaur" {"ivysaur"}
+      "venusaur" {"venusaur"}
+        "charmander" {"Charmander" "charmander" "char man Der" "fire"}
+          "charmeleon" {"charmeleon"}
+            "charizard" {"charizard"}
+              "squirtle" {"squirtle" "turtle" "Squire Toll"}
+                "wartortle" {"wartortle"}
+                  "blastoise"{"blastoise"}
+                    "caterpie"{"caterpie"}
+                      "metapod"{"metapod"}
+                        "butterfree"{"butterfree"}
+                          "weedle"{"weedle"}
+                            "kakuna"{"kakuna"}
+                              "beedrill"{"beedrill"}
+                                "pidgey"{"pidgey"}
+                                  "pidgeotto"{"pidgeotto"}
+                                    "pidgeot"{"pidgeot"}
+                                      "rattata"{"rattata"}
+                                        "raticate"{"raticate"}
+                                          "spearow"{"spearow"}
+                                            "fearow"{"fearow"}
+                                              "ekans"{"ekans"}
+                                                "arbok"{"arbok"}
+                                                  "pikachu" {"pikachu" "mouse"}
+                                                    
+                                                    "garbodor" {"garbodor"}
+                                                      "eevee" {"eevee"}
 }

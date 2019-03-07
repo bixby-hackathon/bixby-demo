@@ -10,62 +10,190 @@ layout-macro-def(pokemon-details-macro) {
   content {
     section {
       content {
-        title-area {
-          slot1 {
-            text {
-              value {
-                template ("#{value (pokemon.name)}")
-              }
+        // title-area {
+        //   slot1 {
+        //     text {
+        //       value {
+        //         template ("BixbyDex")
+        //       }
+        //     }
+        //   }
+        // }
+        image-carousel {
+            images (pokemon.sprites)
+        }
+                  hbox {
+                    content {
+                        vbox {
+                          content {
+                              single-line {
+                                  text {
+                                      value ("#{value (pokemon.species)}")
+                                      style (Title_L)
+                                  }
+                              }
+                          }
+                          }
+                        vbox {
+                          content {
+                              single-line {
+                                  text {
+                                      value ("##{value(pokemon.id)}")
+                                      style (Title_L)
+                                  }
+                              }
+                          }
+                        }
+                    }
+                }
+                hbox {
+                    content {
+                        vbox {
+                          content {
+                              single-line {
+                                  text {
+                                      value ("Height: #{value(pokemon.height)}m")
+                                      style (Detail_M_Soft)
+                                  }
+                              }
+                          }
+                          }
+                        vbox {
+                          content {
+                              single-line {
+                                  text {
+                                      value ("Weight: #{value(pokemon.weight)}kg")
+                                      style (Detail_M_Soft)
+                                  }
+                              }
+                          }
+                        }
+                    }
+                }
+                
+        // image {
+        //   url ("#{value (pokemon.sprite)}")
+        //   size (M)
+        // }
+        // single-line {
+        //   text {
+        //     value ("Pokedex Number: #{value (pokemon.id)}")
+        //     style (Detail_L)
+        //   }
+        // }
+        // single-line {
+        //   text {
+        //     value ("Height: #{value (pokemon.height)}")
+        //     style (Detail_M)
+        //   }
+        // }
+        // single-line {
+        //   text {
+        //     value ("Weight: #{value (pokemon.weight)}")
+        //     style (Detail_M)
+        //   }
+        // }
+        paragraph {
+          value {
+            template ("#{value (pokemon.pokedexEntry)}")
+          }
+        }
+        split-input-cell {
+            left {
+                input-cell {
+                    label {
+                        template ("HP")
+                    }
+                    value {
+                        template ("#{value(pokemon.statHp)}") // Standard
+                    }
+                    // on-click {
+                    //     intent {
+                    //     goal: ShowRideShareInputCells
+                    //     }
+                    // }
+                }
             }
+            right {
+                input-cell {
+                label {
+                    template ("Attack")
+                }
+                value {
+                    template ("#{value(pokemon.statAttack)}")
+                }
+                // on-click {
+                //     intent {
+                //     goal: ShowRideShareInputCells
+                //     }
+                // }
+                }
+            }
+        }
+      split-input-cell {
+          left {
+              input-cell {
+                  label {
+                      template ("Defense")
+                  }
+                  value {
+                      template ("#{value(pokemon.statDefense)}") // Standard
+                  }
+                  // on-click {
+                  //     intent {
+                  //     goal: ShowRideShareInputCells
+                  //     }
+                  // }
+              }
           }
-        }
-        single-line{
-          text {
-            value ("#{value (pokemon.name)}")
+          right {
+              input-cell {
+              label {
+                  template ("Special Attack")
+              }
+              value {
+                  template ("#{value(pokemon.statSpecialAttack)}")
+              }
+              // on-click {
+              //     intent {
+              //     goal: ShowRideShareInputCells
+              //     }
+              // }
+              }
           }
-        }
-        image {
-          url ("#{value (pokemon.sprite)}")
-          size (M)
-        }
-        single-line {
-          text {
-            value ("Pokedex Number: #{value (pokemon.id)}")
-            style (Detail_L)
+      }
+      split-input-cell {
+          left {
+              input-cell {
+                  label {
+                      template ("Special Defense")
+                  }
+                  value {
+                      template ("#{value(pokemon.statSpecialDefense)}") // Standard
+                  }
+                  // on-click {
+                  //     intent {
+                  //     goal: ShowRideShareInputCells
+                  //     }
+                  // }
+              }
           }
-        }
-        single-line {
-          text {
-            value ("Height: #{value (pokemon.height)}")
-            style (Detail_M)
+          right {
+              input-cell {
+              label {
+                  template ("Special Attack")
+              }
+              value {
+                  template ("#{value(pokemon.statSpeed)}")
+              }
+              // on-click {
+              //     intent {
+              //     goal: ShowRideShareInputCells
+              //     }
+              // }
+              }
           }
-        }
-        single-line {
-          text {
-            value ("Weight: #{value (pokemon.weight)}")
-            style (Detail_M)
-          }
-        }
-        paragraph {
-          value {
-            template ("HP: #{value (pokemon.statHp)}")
-            template ("Att: #{value (pokemon.statAttack)}")
-            template ("Def: #{value (pokemon.statDefense)}")
-            template ("SpA: #{value (pokemon.statSpecialAttack)}")
-            template ("SpD: #{value (pokemon.statSpecialDefense)}")
-            template ("Spe: #{value (pokemon.statSpeed)}")
-          }
-        }
-        paragraph {
-          value {
-            template ("#{value (pokemon.url)}")
-          }
-        }
-        paragraph {
-          value {
-            template ("Hi I clicked on this and now its work")
-          }
-        }
+      }
       }
     }
   }

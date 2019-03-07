@@ -2,7 +2,7 @@ module.exports.function = function findPokemon (pokemonName) {
   var response = null;
   if(pokemonName){
     response  =  http.getUrl(config.get('remote.newPokemonUrl') + '/pokemon/'+pokemonName+'/', { format: 'json' });
-    response.species = pokemonName;
+    console.log(response);
     return response;
   } else{
     response = http.getUrl(config.get('remote.pokemonUrl') + '/pokemon', { format: 'json' });

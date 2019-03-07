@@ -1,0 +1,5 @@
+train (t-abctqxr6m9214aa2ehwar9sqw) {
+  utterance ("[g:FindPokemon] Show me (garbodor)[v:PokemonSpecies:garbodor]")
+  plan (Y2BmEC/ISaxML8ovzUvRyygpKdALyM9Ozc3PY5BGl3DLzEuBScrh0BVckJqcmVrMwMTACMQMQJKRAQSgfAA=)
+  last-modified (1551928018887)
+}

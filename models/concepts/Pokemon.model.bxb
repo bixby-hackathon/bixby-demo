@@ -11,6 +11,10 @@ structure (Pokemon) {
     type (Sprite)
     min (Optional)
   }
+  property (sprites) {
+    type (SpriteImage)
+    min (Optional) max (Many)
+  }
   property (id){
     type(Id)
     min (Optional)
@@ -25,6 +29,10 @@ structure (Pokemon) {
   }
   property (weight){
     type(Weight)
+    min (Optional)
+  }
+  property (pokedexEntry){
+    type(PokedexEntry)
     min (Optional)
   }
   property (statHp){
