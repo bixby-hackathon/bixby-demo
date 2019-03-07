@@ -35,6 +35,14 @@ structure (Pokemon) {
     type(PokedexEntry)
     min (Optional)
   }
+  property (type1){
+    type(Type1)
+    min (Optional)
+  }
+  property (type2){
+    type(Type2)
+    min (Optional)
+  }
   property (statHp){
     type(StatHp)
     min (Optional)
@@ -57,6 +65,30 @@ structure (Pokemon) {
   }
   property (statSpeed){
     type(StatSpeed)
+    min (Optional)
+  }
+  property (ability1){
+    type(Ability1)
+    min (Optional)
+  }
+  property (ability1Description){
+    type(Ability1Description)
+    min (Optional)
+  }
+  property (ability2){
+      type(Ability2)
+      min (Optional)
+  }
+  property (ability2Description){
+    type(Ability2Description)
+    min (Optional)
+  }      
+  property (ability3){
+    type(Ability3)
+    min (Optional)
+  }
+  property (ability3Description){
+    type(Ability3Description)
     min (Optional)
   }
 }

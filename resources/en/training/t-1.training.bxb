@@ -1,5 +1,0 @@
-train (t-1i0qqgof6jf6936mam3pz0ur6) {
-  utterance ("[g:FindPokemon] Show me a (char man der)[v:PokemonSpecies:charmander]")
-  plan (Y2BmEEmtSMwtyEnVyygpKdALyM9Ozc3PY5BAEXXLzEuByUhjUx9ckJqcmVrMwMTACMQMQJKRAQSgfAA=)
-  last-modified (1551842640815)
-}

@@ -1,6 +1,0 @@
-train (t-v5vymrgo1qokwlvbzdp9ko3pk) {
-  utterance ([g:FindPokemon] Show me some Pokemon)
-  plan (Y2BiEEmtSMwtyEnVyygpKdALyM9Ozc3PY5BAEXXLzEuByTACIQMUA0kA)
-  enabled (false)
-  last-modified (1551928072490)
-}

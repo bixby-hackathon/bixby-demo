@@ -28,7 +28,7 @@ layout-macro-def(pokemon-details-macro) {
                           content {
                               single-line {
                                   text {
-                                      value ("#{value (pokemon.species)}")
+                                      value ("#{upper(pokemon.species)}")
                                       style (Title_L)
                                   }
                               }
@@ -46,6 +46,32 @@ layout-macro-def(pokemon-details-macro) {
                         }
                     }
                 }
+        divider
+                hbox {
+                    content {
+                        vbox {
+                          content {
+                              single-line {
+                                  text {
+                                      value ("#{upper(pokemon.type1)}")
+                                      style (Title_XS)
+                                  }
+                              }
+                          }
+                          }
+                        vbox {
+                          content {
+                              single-line {
+                                  text {
+                                      value ("#{upper(pokemon.type2)}")
+                                      style (Title_XS)
+                                  }
+                              }
+                          }
+                        }
+                    }
+                }
+        
                 hbox {
                     content {
                         vbox {
@@ -70,34 +96,18 @@ layout-macro-def(pokemon-details-macro) {
                         }
                     }
                 }
-                
-        // image {
-        //   url ("#{value (pokemon.sprite)}")
-        //   size (M)
-        // }
-        // single-line {
-        //   text {
-        //     value ("Pokedex Number: #{value (pokemon.id)}")
-        //     style (Detail_L)
-        //   }
-        // }
-        // single-line {
-        //   text {
-        //     value ("Height: #{value (pokemon.height)}")
-        //     style (Detail_M)
-        //   }
-        // }
-        // single-line {
-        //   text {
-        //     value ("Weight: #{value (pokemon.weight)}")
-        //     style (Detail_M)
-        //   }
-        // }
+        
+        divider
+        
         paragraph {
           value {
-            template ("#{value (pokemon.pokedexEntry)}")
+            template ("#{value(pokemon.pokedexEntry)}")
           }
+          style(Detail_L)
         }
+        
+        divider
+
         split-input-cell {
             left {
                 input-cell {
@@ -194,6 +204,70 @@ layout-macro-def(pokemon-details-macro) {
               }
           }
       }
+        
+        divider
+        
+        compound-card {
+            content {
+                single-line {
+                    text {
+                        value {
+                            template ("ABILITY: #{upper(pokemon.ability1)}")
+                        }
+                        style (Detail_L)
+                    }
+                }
+                paragraph {
+                    value {
+                    template ("#{value(pokemon.ability1Description)}")
+                    }
+                    style (Detail_L_Soft)
+                }
+            }
+        }
+        
+        if(exists(pokemon.ability2)){
+        compound-card {
+            content {
+                single-line {
+                    text {
+                        value {
+                            template ("ABILITY: #{upper(pokemon.ability2)}")
+                        }
+                        style (Detail_L)
+                    }
+                }
+                paragraph {
+                    value {
+                    template ("#{value(pokemon.ability2Description)}")
+                    }
+                    style (Detail_L_Soft)
+                }
+            }
+        }          
+        }
+        
+        if(exists(pokemon.ability3)){
+        compound-card {
+            content {
+                single-line {
+                    text {
+                        value {
+                            template ("HIDDEN ABILITY: #{upper(pokemon.ability3)}")
+                        }
+                        style (Detail_L)
+                    }
+                }
+                paragraph {
+                    value {
+                    template ("#{value(pokemon.ability3Description)}")
+                    }
+                    style (Detail_L_Soft)
+                }
+            }
+        }
+        }
+        divider
       }
     }
   }
