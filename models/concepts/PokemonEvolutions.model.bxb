@@ -1,0 +1,6 @@
+structure (PokemonEvolutions) {
+  property (name) {
+    type (Name)
+    min (Optional)
+  }
+}

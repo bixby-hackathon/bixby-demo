@@ -4,7 +4,7 @@ action (FindPokemon) {
   collect {
     input (pokemonName) {
       type (PokemonSpecies)
-      min (Optional) max (One)
+      min (Required) max (One)
     }
   }
   output (Pokemon)

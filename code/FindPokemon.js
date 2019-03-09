@@ -1,13 +1,13 @@
-module.exports.function = function findPokemon (pokemonName) {
+var console = require('console');
+var http = require('http');
+var config = require('config');
+
+module.exports.function = function findPokemon (pokemonName, $vivContext) {
+  console.log($vivContext.sessionId)
+  console.log($vivContext.userId)
   var response = null;
-  if(pokemonName){
-    response  =  http.getUrl(config.get('remote.newPokemonUrl') + '/pokemon/'+pokemonName+'/', { format: 'json' });
-    console.log(response);
-    return response;
-  } else{
-    response = http.getUrl(config.get('remote.pokemonUrl') + '/pokemon', { format: 'json' });
-    return response.results;
-  }
-  // Read the remote.url value from capsule.properties
-  // var response = http.getUrl('https://pokeapi.co/api/v2/pokemon', { format: 'json' });
+  response  =  http.getUrl(config.get('remote.newPokemonUrl') + '/pokemon/one/'+pokemonName+'/', { format: 'json'});
+  // response  =  http.getUrl(config.get('remote.newPokemonUrl') + '/pokemon/more?sid='+$vivContext.sessionId+'', { format: 'json'});
+  console.log(response);
+  return response;
 }

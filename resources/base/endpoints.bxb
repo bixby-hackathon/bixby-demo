@@ -3,8 +3,12 @@ endpoints {
   action-endpoints {
     
     action-endpoint (FindPokemon) {
-      accepted-inputs (pokemonName)
+      accepted-inputs (pokemonName, $vivContext)
       local-endpoint (FindPokemon.js)
+    }
+    action-endpoint (GetEvolutions) {
+      accepted-inputs (pokemonName, $vivContext)
+      local-endpoint (GetEvolutions.js)
     }
   }
 }

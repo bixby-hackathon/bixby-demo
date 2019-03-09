@@ -1,0 +1,13 @@
+result-view {
+  match {
+    PokemonEvolutions (this)
+  }
+  
+  render {
+    layout-macro (pokemon-evolutions-macro) {
+        param (pokemonEvolutions) {
+            expression (this)
+        }
+    }
+  }
+}
