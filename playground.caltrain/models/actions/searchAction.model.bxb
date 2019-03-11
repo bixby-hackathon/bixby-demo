@@ -1,0 +1,11 @@
+action (searchAction) {
+  type (Search)
+  description (search caltrain stations)
+  collect {
+    input (searchInput) {
+      type (stations)
+      min (Required) max (One)
+    }
+  }
+  output (searchOutput)
+}
