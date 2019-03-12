@@ -1,5 +1,5 @@
 capsule {
-  id (playground.pokemon)
+  id (playground.http)
   version (1.0.0)
   format (3)
   targets {

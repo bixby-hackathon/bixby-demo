@@ -3,4 +3,8 @@ structure (PokemonEvolutions) {
     type (Name)
     min (Optional)
   }
+  property (count) {
+    type (Count)
+    min (Optional)
+  }
 }

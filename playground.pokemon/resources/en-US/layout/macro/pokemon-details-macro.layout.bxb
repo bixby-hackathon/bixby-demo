@@ -28,8 +28,8 @@ layout-macro-def(pokemon-details-macro) {
                           content {
                               single-line {
                                   text {
-                                      value ("#{upper(pokemon.species)}")
-                                      style (Title_L)
+                                      value ("#{upper(pokemon.name)}")
+                                      style (Title_M)
                                   }
                               }
                           }
@@ -38,8 +38,8 @@ layout-macro-def(pokemon-details-macro) {
                           content {
                               single-line {
                                   text {
-                                      value ("##{value(pokemon.id)}")
-                                      style (Title_L)
+                                      value ("##{value(pokemon.pokedexNumber)}")
+                                      style (Title_M)
                                   }
                               }
                           }
@@ -267,20 +267,20 @@ layout-macro-def(pokemon-details-macro) {
             }
         }
         }
-        divider
-          input-cell {
-            label {
-                template ("Testing Touch")
-            }
-            value {
-                template ("Show me something")
-            }
-            on-click {
-                intent {
-                goal: GetEvolutions
-                }
-            }
-        }
+        // divider
+        //   input-cell {
+        //     label {
+        //         template ("Testing Touch")
+        //     }
+        //     value {
+        //         template ("Show me something")
+        //     }
+        //     on-click {
+        //         intent {
+        //         goal: GetEvolutions
+        //         }
+        //     }
+        // }
       }
     }
   }

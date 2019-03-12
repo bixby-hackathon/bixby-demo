@@ -1,4 +1,0 @@
-enum (Stations) {
-description (caltrain stations)
-symbol(sunnyvale)
-}

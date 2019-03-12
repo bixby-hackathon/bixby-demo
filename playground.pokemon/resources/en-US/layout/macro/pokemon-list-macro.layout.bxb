@@ -8,23 +8,43 @@ layout-macro-def(pokemon-list-macro) {
   }
 
   content {
-    compound-card {
-      content {
-        title-area {
-          slot1 {
+    
+    image-card {
+    aspect-ratio (3:4)
+    title-area {
+        halign (Start)
+        slot1 {
             text {
-              value {
-                template ("Hello I'm #{value (pokemon.name)}")
-              }
+                value ("##{value(pokemon.rank)}. #{title(pokemon.name)}")
+                style (Detail_L)
             }
-          }
         }
-        paragraph {
-          value {
-            template ("#{value (pokemon.url)}")
-          }
+        slot2 {
+            single-line {
+            text {
+                value ("#{value(pokemon.count)} searches")
+                style (Detail_M_Soft)
+            }
+            }
         }
-      }
     }
+    image-url ("#{value(pokemon.sprites[0].url)}")
+    }
+    
+   //  cell-card {
+   //  slot1 {
+   //      image {
+   //          url ("#{value(pokemon.sprites[0].url)}")
+   //          shape (Square)
+   //      }
+   //  }
+   //  slot2 {
+   //      content {
+   //          order (PrimarySecondary)
+   //          primary ("##{value(pokemon.rank)}. #{title(pokemon.name)}") // Fields of America for Fall
+   //          secondary ("Searched for #{value(pokemon.count)} times") // $39.99 - $59.99
+   //      }
+   //  }
+   // }
   }
 }

@@ -1,0 +1,9 @@
+action (MostPopular) {
+  type (Search)
+  output (Pokemon)
+  {
+    on-empty {
+      drop-contextual-inputs
+    }    
+  }
+}

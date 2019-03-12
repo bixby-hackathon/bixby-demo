@@ -1,0 +1,28 @@
+layout-macro-def(popular-pokemon-macro) {
+  params {
+    param (pokemon) {
+      type (Pokemon)
+      min (Required)
+      max (One)
+    }
+  }
+
+  content {
+    
+    cell-card {
+    slot1 {
+        image {
+            url ("#{value(pokemon.sprites[0].url)}")
+            shape (Square)
+        }
+    }
+    slot2 {
+        content {
+            order (PrimarySecondary)
+            primary ("#{value (pokemon.name)}") // Fields of America for Fall
+            secondary ("#{value(pokemon.count)}") // $39.99 - $59.99
+        }
+    }
+   }
+  }
+}

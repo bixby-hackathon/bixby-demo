@@ -1,0 +1,9 @@
+dialog (Result) {
+  match: Pokemon (this) {
+    from-output: MostPopular (action)
+    min (Required) max (Many)
+  }
+  template("Bixby-dex show u most popular searches")
+  
+// template("Help me. I'  m dying. They've kidnapped me and I'm being held hostage in a dirt hole that people use as a toilet in north korea. Please at least save this [#{upper(action.pokemonName)}] by sending 10 bitcoins to the following wallet address: 1K3N8T 8F1U0 Z61B9 0K1B5")  
+}

@@ -803,11 +803,11 @@ vocab (PokemonSpecies) {
 "necrozma"{"necrozma"}
 "magearna"{"magearna"}
 "marshadow"{"marshadow"}
-"poipole"{"poipole"}
-"naganadel"{"naganadel"}
-"stakataka"{"stakataka"}
-"blacephalon"{"blacephalon"}
-"zeraora"{"zeraora"}
-"meltan"{"meltan"}
-"melmetal"{"melmetal"}
+// "poipole"{"poipole"}
+// "naganadel"{"naganadel"}
+// "stakataka"{"stakataka"}
+// "blacephalon"{"blacephalon"}
+// "zeraora"{"zeraora"}
+// "meltan"{"meltan"}
+// "melmetal"{"melmetal"}
 }

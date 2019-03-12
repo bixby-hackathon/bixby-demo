@@ -1,0 +1,12 @@
+dialog (Result) {
+  match: Pokemon (this) {
+    from-output: FindRandomPokemon (action)
+  }
+  if (this.message == 1){
+    template("Bixby-dex got beat up by [#{title(this.name)}]")
+  } else-if(this.message == 2) {
+    template("Bixby-dex randomly found [#{title(this.name)}]")
+  } else-if(this.message == 3) {
+    template("Bixby-dex tripped on [#{title(this.name)}]")
+  }
+}

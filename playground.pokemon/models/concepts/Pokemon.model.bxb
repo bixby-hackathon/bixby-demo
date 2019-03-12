@@ -1,6 +1,17 @@
 structure (Pokemon) {
+  // features {
+  //   profile-stored { max (One) }
+  // }
   property (name) {
     type (Name)
+    min (Optional)
+  }
+  property (count){
+    type (Count)
+    min (Optional)
+  }
+  property (rank){
+    type (Rank)
     min (Optional)
   }
   property (url) {
@@ -89,6 +100,14 @@ structure (Pokemon) {
   }
   property (ability3Description){
     type(Ability3Description)
+    min (Optional)
+  }
+  property (message){
+    type(Message)
+    min (Optional)
+  }
+  property (pokedexNumber){
+    type(PokedexNumber)
     min (Optional)
   }
 }

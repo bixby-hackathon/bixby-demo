@@ -3,11 +3,8 @@ var http = require('http');
 var config = require('config');
 
 module.exports.function = function findPokemon (pokemonName, $vivContext) {
-  console.log($vivContext.sessionId)
-  console.log($vivContext.userId)
-  var response = null;
-  response  =  http.getUrl(config.get('remote.newPokemonUrl') + '/pokemon/one/'+pokemonName+'/', { format: 'json'});
-  // response  =  http.getUrl(config.get('remote.newPokemonUrl') + '/pokemon/more?sid='+$vivContext.sessionId+'', { format: 'json'});
-  console.log(response);
+  var rand = Math.floor(Math.random()*10000000000000)
+  var response = http.getUrl(config.get('remote.newPokemonUrl') + '/pokemon/one/'+pokemonName+'?userId='+$vivContext.userId+'+&rand='+rand+'', { format: 'json'});
+  response.message = Math.floor(Math.random()*4+1);
   return response;
 }

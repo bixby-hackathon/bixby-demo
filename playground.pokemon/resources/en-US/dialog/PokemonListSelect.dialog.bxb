@@ -1,0 +1,7 @@
+dialog (Result) {
+  match: Pokemon (this) {
+    from-output: MostPopular (action)
+    min (Optional) max (One)
+  }
+  template("Bixby-dex found u a [#{upper(this.name)}]")
+}
