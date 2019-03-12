@@ -1,7 +1,7 @@
 endpoints {
   action-endpoints {
     action-endpoint (searchAction) {
-      accepted-inputs (searchInput)
+      accepted-inputs (dontInput, doInput, searchInput)
       local-endpoint (searchScript.js)
     }
   }

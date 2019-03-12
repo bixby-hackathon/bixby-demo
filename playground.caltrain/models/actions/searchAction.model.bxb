@@ -2,6 +2,17 @@ action (searchAction) {
   type (Search)
   description (search caltrain stations)
   collect {
+    
+    input (dontInput) {
+      type (dont)
+      min (Optional) max (One)
+    }
+    
+    input (doInput) {
+      type (do)
+      min (Optional) max (One)
+    }
+    
     input (searchInput) {
       type (stations)
       min (Required) max (One)

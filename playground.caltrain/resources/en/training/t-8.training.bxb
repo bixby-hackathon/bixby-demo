@@ -1,0 +1,5 @@
+train (t-8da6zbpslz909b4kiz5vni85b) {
+  utterance ("[g:searchAction] (san francisco)[v:stations:san-francisco]")
+  plan (Y2BmUCjISaxML8ovzUvRS07MKSlKzMzTK05NLErO8C8tKSgtwafCMbkkMz+PQQaripJEkGQxAxMDIxAzAElGBhCA8gE=)
+  last-modified (1552428886835)
+}

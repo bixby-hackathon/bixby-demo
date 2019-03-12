@@ -1,5 +1,0 @@
-train (t-06ywm9ocptbwceu21e3j8trw5) {
-  utterance ([g:searchAction,v:stations:sunnyvale] sunnyvale)
-  plan (Y2BmUCjISaxML8ovzUvRS07MKSlKzMzTK05NLErO8C8tKSgtwafCMbkkMz+PQQaripJEkGQxAxMDIxAzAElGBhCA8gE=)
-  last-modified (1552319193881)
-}

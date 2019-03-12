@@ -1,10 +1,10 @@
 train (t-3cujozw8rp5j48yp5tqk0mogk) {
   utterance ("[g:FindPokemon] show me (charizard)[v:PokemonSpecies:charizard]")
-  plan (Y2BmEC/ISaxML8ovzUvRyygpKdALyM9Ozc3PY5BGl3DLzEuBScrh0BVckJqcmVrMwMTACMQMQJKRAQSgfAA=)
-  last-modified (1551941924544)
+  plan (Y2BmkCrISaxML8ovzUvRK8jPTs3Nz9MLgNAMcljk3DLzUmDyirj1BhekJmemFjMwMTACMQOQZGQAASgfAA==)
+  last-modified (1552326500819)
 }
 train (t-3eiy4bcb1e3z5zg3f2pvvx80q) {
   utterance ("[g:FindPokemon] (tapu bulu)[v:PokemonSpecies:tapu-bulu]")
-  plan (Y2BmEC/ISaxML8ovzUvRyygpKdALyM9Ozc3PY5BGl3DLzEuBScrh0BVckJqcmVrMwMTACMQMQJKRAQSgfAA=)
-  last-modified (1551943856140)
+  plan (Y2BmkCrISaxML8ovzUvRK8jPTs3Nz9MLgNAMcljk3DLzUmDyirj1BhekJmemFjMwMTACMQOQZGQAASgfAA==)
+  last-modified (1552326457260)
 }

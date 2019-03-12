@@ -1,0 +1,9 @@
+enum (do) {
+  description (do search)
+  symbol (show)
+  symbol (where)
+  symbol (find)
+  symbol (dont)
+  symbol (not)
+  symbol ()
+}

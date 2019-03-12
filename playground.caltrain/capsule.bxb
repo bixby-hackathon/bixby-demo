@@ -5,4 +5,17 @@ capsule {
   targets {
     target (bixby-mobile-en-US)
   }
+  
+    // capsule-imports {
+    // import (viv.common) { 
+    //   as (common) version (3.28.9)
+    // }
+    // import (viv.money) { 
+    //   as (money) 
+    //   version (2.18.9)
+    // }
+    // import (viv.image) {
+    //   as (image) version (	2.8.1)
+    // }
+  //}
 }

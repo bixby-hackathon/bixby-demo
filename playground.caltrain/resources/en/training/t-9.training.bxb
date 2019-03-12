@@ -1,0 +1,10 @@
+train (t-9qkxyownchtgy5tx6zqrlw5md) {
+  utterance ("[g:searchAction] (show)[v:do:show] (san francisco)[v:stations:san-francisco]")
+  plan (Y2BhUCjISaxML8ovzUvRS07MKSlKzMzTK05NLErO8C8tKSgtwafCMbkkMz+PQQybipR8BhmsOksSQZqKGZgZGBmYgCQDkAZBCICLAgA=)
+  last-modified (1552427571613)
+}
+train (t-9ye43v1atxhhl8vbgkml2k521) {
+  utterance ("[g:searchAction] (millbrae)[v:stations:millbrae]")
+  plan (Y2BmUCjISaxML8ovzUvRS07MKSlKzMzTK05NLErO8C8tKSgtwafCMbkkMz+PQQaripJEkGQxAxMDIxAzAElGBhCA8gE=)
+  last-modified (1552428782067)
+}

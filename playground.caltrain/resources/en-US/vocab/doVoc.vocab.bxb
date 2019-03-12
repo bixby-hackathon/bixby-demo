@@ -1,0 +1,5 @@
+vocab(do){
+  "show" {"show"}
+  "find" {"find"}
+  "where" {"where"}
+}
