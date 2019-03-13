@@ -11,6 +11,8 @@ dialog (Result) {
     template("Bixby-dex caught for you this [#{title(action.pokemonName)}]")
   } else-if(this.message == 4) {
     template("Bixby-dex defenestrates this [#{title(action.pokemonName)}]")
+  } else-if(this.message == 5) {
+    template("Bixby-dex pets this [#{title(action.pokemonName)}]")
   }
 // template("Help me. I'  m dying. They've kidnapped me and I'm being held hostage in a dirt hole that people use as a toilet in north korea. Please at least save this [#{upper(action.pokemonName)}] by sending 10 bitcoins to the following wallet address: 1K3N8T 8F1U0 Z61B9 0K1B5")  
 }

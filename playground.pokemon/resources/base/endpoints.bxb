@@ -6,10 +6,10 @@ endpoints {
       accepted-inputs (pokemonName, $vivContext)
       local-endpoint (FindPokemon.js)
     }
-    // action-endpoint (GetEvolutions) {
-    //   accepted-inputs (pokemon, $vivContext)
-    //   local-endpoint (GetEvolutions.js)
-    // }
+    action-endpoint (GetEvolutions) {
+      accepted-inputs (pokemon, $vivContext)
+      local-endpoint (GetEvolutions.js)
+    }
     action-endpoint (MostPopular) {
       accepted-inputs ($vivContext)
       local-endpoint (MostPopular.js)

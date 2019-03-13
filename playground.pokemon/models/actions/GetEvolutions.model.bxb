@@ -1,8 +1,8 @@
 action (GetEvolutions) {
   type (Search)
   collect {
-    input (pokemonName) {
-      type (PokemonSpecies)
+    input (pokemon) {
+      type (Pokemon)
       min (Optional)
     }
   }

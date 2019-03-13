@@ -22,4 +22,16 @@ result-view {
       }
     }
   }
+  
+  conversation-drivers {
+      // each case is different depending on 
+      // the currently selected shirt
+        conversation-driver {
+          template ("find evolutions")
+        }
+        conversation-driver {
+          template ("Get Poop")
+        }                       
+
+  }
 }

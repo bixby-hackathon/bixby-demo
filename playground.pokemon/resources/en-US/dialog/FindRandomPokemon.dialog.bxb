@@ -8,5 +8,11 @@ dialog (Result) {
     template("Bixby-dex randomly found [#{title(this.name)}]")
   } else-if(this.message == 3) {
     template("Bixby-dex tripped on [#{title(this.name)}]")
+  } else-if(this.message == 4) {
+    template("Bixby-dex got eaten by [#{title(this.name)}]. Please help!")
+  } else-if(this.message == 5) {
+    template("Bixby-dex ate this [#{title(this.name)}] for breakfast.")
+  } else-if(this.message == 6) {
+    template("Bixby-dex almost got killed by [#{title(this.name)}]. Bixby-dex crapped its pants.")
   }
 }

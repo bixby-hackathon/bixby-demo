@@ -27,10 +27,10 @@ vocab (PokemonSpecies) {
 "raichu"{"raichu"}
 "sandshrew"{"sandshrew"}
 "sandslash"{"sandslash"}
-"nidoran♀"{"nidoran♀"}
+"nidoran-m"{"nidoran-m"}
 "nidorina"{"nidorina"}
 "nidoqueen"{"nidoqueen"}
-"nidoran♂"{"nidoran♂"}
+"nidoran-f"{"nidoran-f"}
 "nidorino"{"nidorino"}
 "nidoking"{"nidoking"}
 "clefairy"{"clefairy"}
