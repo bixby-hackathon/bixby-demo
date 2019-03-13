@@ -1,0 +1,5 @@
+train (t-50ai0qk1ht822dwtybhhzh6ku) {
+  utterance ("[g:searchAction] (south san francisco)[v:stations:south-san-francisco]")
+  plan (Y2BmUCjISaxML8ovzUvRS07MKSlKzMzTK05NLErO8C8tKSgtwafCMbkkMz+PQQaripJEkGQxAxMDIxAzAElGBhCA8gE=)
+  last-modified (1552450618895)
+}

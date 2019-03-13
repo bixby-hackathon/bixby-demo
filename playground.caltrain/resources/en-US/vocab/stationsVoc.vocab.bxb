@@ -1,24 +1,24 @@
 vocab (stations) {
- "san-francisco" {"san francisco" "sanfrancisco"}  
- "22nd-street"{"22nd street" "22nd"} 
- "bayshore" {"bayshore""bay"}
- "south-san-francisco"{"south san francisco" "south"}
- "san-bruno"{"san bruno", "bruno"}
- "millbrae"{"millbrae", "mill"}
- "burlingame"{"burlingame", "bur", "burlin", "game"}
- "san-mateo"{"san mateo", "mateo", "sam"}
- "hayward-park" {"hayward park", "hayward", "hay"}
- "hillsdale"{"hillsdale", "hill", "dale"}
- "belmont"{"belmont", "bel", "mount"}
- "san-carlos"{"san carlos", "sancarlos", "carlos"}
- "redwood-city"{"redwood city", "redwood", "red", "wood"}
- "menlo-park"{"menlo park", "menlo"}
- "palo-alto"{"palo alto", "pal", "alto"}
- "california-ave"{"california ave", "califonia"}
- "san-antonio"{"san antonio","sanantonio", "ant"}
- "mountain-view"{"mountain view", "mount"}
- "sunnyvale"{"sunnyvale", "sunny"}
- "lawrence"{"lawrence", "law"}
- "santa-clara"{"santa clara", "santa", "clara"}
- "san-jose"{"san jose", "jose", "sanj"}
+ "san-francisco" {"san francisco"}  
+ "22nd-street"{"22nd street" "22nd", "20 seconds 3"} 
+ "bayshore" {"bayshore""baser" "pay sure" "A sore" "Pay soar"}
+ "south-san-francisco"{"south san francisco" "so san francisco", "Salt San Francisco", "Seoul San Francisco", "South service Cisco", "Saul San Francisco" "Saw San Francisco"}
+ "san-bruno"{"san bruno", "some bruno"}
+ "millbrae"{"millbrae", "newberry", "Millbury", "Milroy" "Milbury"}
+ "burlingame"{"burlingame", "Burning"}
+ "san-mateo"{"san mateo", "Summertown", "Summer tell", "Summertime" "Some ideal"}
+ "hayward-park" {"hayward park", "Hey why" , "Hey were" , "Hey UR", "How you are", "Hey you are", "Hey where","Hey why park" , "Hey were park" , "Hey UR park", "How you are park", "Hey you are park", "Hey where park" "Hey work hard"}
+ "hillsdale"{"hillsdale"}
+ "belmont"{"belmont", "Elmo", "Belma", "Bellman"}
+ "san-carlos"{"san carlos", "Some Carlos", "Some color" "San Carlo"}
+ "redwood-city"{"redwood city", "Rose City", "Royal city"}
+ "menlo-park"{"menlo park", "Now open", "Download", "Hello park", "Allow park" "Metal park" "Manal park" "Malopara" "Mellow park"}
+ "palo-alto"{"palo alto", "Power auto", "Hello to", "Pull out", "Hello auto", "Power off", "Hello alto" "Palato"}
+ "california-ave"{"california ave", "California Avenue","Telephone on", "Prada phone I knew", "Colophon on you", "California and new", "Califone Avenue", "Telephone now I knew", "Telephone I knew" "California I know", "Telephone I'm now", "Califone I know" "Telephone Avenue" "Telephone I'm now" "Telephone now I know" "Call phone I knew"}
+ "san-antonio"{"san antonio","Send Antonio", "San Antone o", "Send tonio" "Santonio" "Set Antonio"}
+ "mountain-view"{"mountain view"}
+ "sunnyvale"{"sunnyvale", "Sunny well" "Sunny will" "Sony well"}
+ "lawrence"{"lawrence"}
+ "santa-clara"{"santa clara", "Send Clara" "Send a Clara" "Send akhara"}
+ "san-jose"{"san jose", "So say", "Sandra", "South say", "Cell say" "Sound say" "Sounds a"}
 }
