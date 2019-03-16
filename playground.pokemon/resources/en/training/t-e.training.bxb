@@ -1,0 +1,5 @@
+train (t-e9ldmil6rm102tod08edn29z6) {
+  utterance ("[g:FindPokemon] (Bulb a sore)[v:PokemonSpeciesTest]")
+  plan (Y2BmEE3KrEiqTEmt0MsoKSnQC8jPTs3Nz2OQRBV2y8xLgUkpYNURXJCanJlaHJJaXMLAxMAIxAxAkpEBBKB8AA==)
+  last-modified (1552775781831)
+}

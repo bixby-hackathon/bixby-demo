@@ -1,3 +1,8 @@
+train (t-k85nhpyz1zyjropl40mi9nd3i) {
+  utterance ("[g:FindPokemon] (Tapu koko)[v:PokemonSpeciesTest]")
+  plan (Y2BmEE3KrEiqTEmt0MsoKSnQC8jPTs3Nz2OQRBV2y8xLgUkpYNURXJCanJlaHJJaXMLAxMAIxAxAkpEBBKB8AA==)
+  last-modified (1552775758276)
+}
 train (t-kfzy5v589rbxng1ifxqunm5v9) {
   utterance ([g:MostPopular] Most popular pokemon)
   plan (Y2BiEC/ISaxML8ovzUvRyygpKdALyM9Ozc3PY5BGl/DNLy4JyC8ozUksYmAEQgYoBpIA)

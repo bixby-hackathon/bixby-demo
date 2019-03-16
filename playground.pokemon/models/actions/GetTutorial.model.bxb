@@ -1,0 +1,5 @@
+action (GetTutorial) {
+  description (__DESCRIPTION__)
+  type(Search)
+  output (Tutorial)
+}

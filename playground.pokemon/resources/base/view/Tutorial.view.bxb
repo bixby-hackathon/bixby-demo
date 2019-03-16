@@ -1,0 +1,13 @@
+result-view {
+  match {
+    Tutorial (this)
+  }
+
+  render {
+    layout-macro (tutorial-macro){
+      param (this){
+        expression (this)
+      }
+    }
+  }
+}

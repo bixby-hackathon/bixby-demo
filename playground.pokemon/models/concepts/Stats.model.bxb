@@ -6,4 +6,5 @@ enum (Stats) {
   symbol (special-defense)
   symbol (hp)
   symbol (speed)
+  symbol (total)
 }

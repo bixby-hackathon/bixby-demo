@@ -1,0 +1,10 @@
+dialog (Result) {
+  match: PokemonEvolutions (this) {
+    from-output: GetEvolutions (action)
+  }
+  if(size(this.evolutions)>0){
+    template("Bixby-dex show u evolution chain of #{title(this.name)}")
+  } else {
+    template("Bixby-dex found out something shocking about #{title(this.name)}")
+  }
+}

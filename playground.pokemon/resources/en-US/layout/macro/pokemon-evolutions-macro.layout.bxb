@@ -17,56 +17,35 @@ layout-macro-def(pokemon-evolutions-macro) {
             {
               compound-card{
                 content{
-                  // too small, replace with thumbnail card maybe
-                  // cell-area {
-                  //   slot1 {
-                  //     image {
-                  //       url ("#{value(evolution.nameSprite)}")
-                  //       shape (Square)
-                  //     }
-                  //   }
-                  //   slot2 {
-                  //     content {
-                  //       order (SecondaryPrimary)
-                  //       secondary ("This Pokemon:")
-                  //       primary ("#{title(evolution.name)}")
-                  //     }
+                  image-card {
+                    aspect-ratio (21:9)
+                    image-object-fit (Contain)
+
+                    title-area {
+                      halign (Start)
+                      slot1 {
+                        text {
+                          value ("From: #{title(evolution.name)}")
+                          style (Title_XS)
+                        }
+                      }
+                      // slot2 {
+                      //   single-line{
+                      //     text {
+                      //       value ("evolves into")
+                      //       style (Detail_M_Soft)
+                      //     }
+                      //   }
+                      // }
+                    }
+                    image-url ("#{value(evolution.nameSprite)}")
+                  }         
+                  // single-line{
+                  //   text {
+                  //     value ("evolves into")
+                  //     style (Detail_M_Soft)
                   //   }
                   // }
-
-                  // too offcenter, maybe user something else
-                  // thumbnail-card{
-                  //   image-url{
-                  //     template ("#{value(evolution.nameSprite)}")
-                  //   }
-                  //   image-position (Start)
-                  //   title-area {
-                  //     halign (Start)
-                  //     slot1 {
-                  //       text {
-                  //         style (Detail_M_Soft)
-                  //         value ("This Pokemon")
-                  //       }
-                  //     }
-                  //     slot2 {
-                  //       single-line {
-                  //         text {
-                  //           style (Title_M)
-                  //           value ("#{title(evolution.name)}")
-                  //         }
-                  //       }
-                  //     }
-                  //     slot3 {
-                  //       single-line {
-                  //         text {
-                  //           style (Detail_M_Soft)
-                  //           value ("evolves into:")
-                  //         }
-                  //       }
-                  //     }
-                  //   }
-                  // }
-
                   image-card {
                     aspect-ratio (21:9)
                     image-object-fit (Contain)
@@ -74,30 +53,8 @@ layout-macro-def(pokemon-evolutions-macro) {
                       halign (Start)
                       slot1 {
                         text {
-                          value ("#{title(evolution.name)}")
+                          value ("To: #{title(evolution.evolvesTo)}")
                           style (Title_XS)
-                        }
-                      }
-                      slot2 {
-                        single-line{
-                          text {
-                            value ("evolves into")
-                            style (Detail_M_Soft)
-                          }
-                        }
-                      }
-                    }
-                    image-url ("#{value(evolution.nameSprite)}")
-                  }         
-
-                  image-card {
-                    aspect-ratio (1:1)
-                    title-area {
-                      halign (Start)
-                      slot1 {
-                        text {
-                          value ("#{title(evolution.evolvesTo)}")
-                          style (Title_S)
                         }
                       }
                     }
@@ -108,8 +65,12 @@ layout-macro-def(pokemon-evolutions-macro) {
                     value("#{value(evolution.text)}")
                     style (Detail_L)
                   }
+                  divider
                 }
-              }}}}
+              }
+            }
+          }
+        }
         else{
           paragraph{
             value("This Pokemon has no evolutions")

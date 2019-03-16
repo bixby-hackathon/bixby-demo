@@ -5,4 +5,5 @@ vocab(Stats){
   "special-defense" {"special defense"}
   "hp"{"hp"}
   "speed" {"speed"}
+  "total" {"total" "total stats"}
 }

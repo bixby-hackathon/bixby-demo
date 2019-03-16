@@ -22,5 +22,8 @@ endpoints {
       accepted-inputs (pref, stat, $vivContext)
       local-endpoint (FetchStats.js)
     }
+     action-endpoint (GetTutorial) {
+      local-endpoint (GetTutorial.js)
+    }
   }
 }

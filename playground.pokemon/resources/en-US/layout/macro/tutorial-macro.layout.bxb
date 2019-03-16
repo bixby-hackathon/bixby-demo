@@ -1,0 +1,45 @@
+layout-macro-def(tutorial-macro) {
+  params {
+    param (this) {
+      type (Tutorial)
+      min (Required)
+      max (One)
+    }
+  }
+
+  content {
+    section{
+      content{
+        paragraph{
+          value{
+            template ("#{value(this.tutorial1)}") 
+          }
+        }
+
+        paragraph{
+          value{
+            template ("#{value(this.tutorial2)}") 
+          }
+        }
+        paragraph{
+          value{
+            template ("#{value(this.tutorial3)}") 
+          }
+        }
+        paragraph{
+          value{
+            template ("#{value(this.tutorial4)}") 
+          }
+        }
+        paragraph{
+          value{
+            template ("#{value(this.tutorial5)}") 
+          }
+        }
+
+
+
+      }
+    }
+  }
+}

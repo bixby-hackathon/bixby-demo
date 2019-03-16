@@ -78,6 +78,10 @@ structure (Pokemon) {
     type(StatSpeed)
     min (Optional)
   }
+  property (statTotal){
+    type(StatTotal)
+    min (Optional)
+  }
   property (ability1){
     type(Ability1)
     min (Optional)

@@ -22,16 +22,11 @@ result-view {
       }
     }
   }
-  
   conversation-drivers {
-      // each case is different depending on 
-      // the currently selected shirt
-        conversation-driver {
+    if("size(this)==1"){
+      conversation-driver {
           template ("More Information")
         }
-        conversation-driver {
-          template ("Get Poop")
-        }                       
-
+    }
   }
 }
