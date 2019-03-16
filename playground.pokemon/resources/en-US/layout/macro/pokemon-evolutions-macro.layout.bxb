@@ -1,6 +1,6 @@
 layout-macro-def(pokemon-evolutions-macro) {
   params {
-    param (pokemonEvolutions) {
+    param (this) {
       type (PokemonEvolutions)
       min (Required)
       max (One)
@@ -8,18 +8,114 @@ layout-macro-def(pokemon-evolutions-macro) {
   }
 
   content {
-    compound-card {
-      content {
-        title-area {
-          slot1 {
-            text {
-              value {
-                template ("Hello I'm #{value (pokemonEvolutions.name)}")
-              }
-            }
+
+    section{
+      content{
+        if(size(this.evolutions)>0){
+          for-each (this.evolutions) {
+            as (evolution) 
+            {
+              compound-card{
+                content{
+                  // too small, replace with thumbnail card maybe
+                  // cell-area {
+                  //   slot1 {
+                  //     image {
+                  //       url ("#{value(evolution.nameSprite)}")
+                  //       shape (Square)
+                  //     }
+                  //   }
+                  //   slot2 {
+                  //     content {
+                  //       order (SecondaryPrimary)
+                  //       secondary ("This Pokemon:")
+                  //       primary ("#{title(evolution.name)}")
+                  //     }
+                  //   }
+                  // }
+
+                  // too offcenter, maybe user something else
+                  // thumbnail-card{
+                  //   image-url{
+                  //     template ("#{value(evolution.nameSprite)}")
+                  //   }
+                  //   image-position (Start)
+                  //   title-area {
+                  //     halign (Start)
+                  //     slot1 {
+                  //       text {
+                  //         style (Detail_M_Soft)
+                  //         value ("This Pokemon")
+                  //       }
+                  //     }
+                  //     slot2 {
+                  //       single-line {
+                  //         text {
+                  //           style (Title_M)
+                  //           value ("#{title(evolution.name)}")
+                  //         }
+                  //       }
+                  //     }
+                  //     slot3 {
+                  //       single-line {
+                  //         text {
+                  //           style (Detail_M_Soft)
+                  //           value ("evolves into:")
+                  //         }
+                  //       }
+                  //     }
+                  //   }
+                  // }
+
+                  image-card {
+                    aspect-ratio (21:9)
+                    image-object-fit (Contain)
+                    title-area {
+                      halign (Start)
+                      slot1 {
+                        text {
+                          value ("#{title(evolution.name)}")
+                          style (Title_XS)
+                        }
+                      }
+                      slot2 {
+                        single-line{
+                          text {
+                            value ("evolves into")
+                            style (Detail_M_Soft)
+                          }
+                        }
+                      }
+                    }
+                    image-url ("#{value(evolution.nameSprite)}")
+                  }         
+
+                  image-card {
+                    aspect-ratio (1:1)
+                    title-area {
+                      halign (Start)
+                      slot1 {
+                        text {
+                          value ("#{title(evolution.evolvesTo)}")
+                          style (Title_S)
+                        }
+                      }
+                    }
+                    image-url ("#{value(evolution.evolvesToSprite)}")
+                  }
+
+                  paragraph{
+                    value("#{value(evolution.text)}")
+                    style (Detail_L)
+                  }
+                }
+              }}}}
+        else{
+          paragraph{
+            value("This Pokemon has no evolutions")
           }
         }
-      }
+      } 
     }
   }
 }

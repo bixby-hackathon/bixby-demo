@@ -3,7 +3,8 @@ var config = require('config');
 var http = require('http');
 
 module.exports.function = function GetEvolutions (pokemon,  $vivContext) {
-  console.log(pokemon);
-  pokemonEvolution = {name:pokemon.name};
-  return pokemonEvolution;
+  var rand = Math.floor(Math.random()*10000000000000)
+  var response  =  http.getUrl(config.get('remote.newPokemonUrl') + '/pokemon/evolutions/'+pokemon.name+'?userId='+$vivContext.userId+'+&rand='+rand+'', { format: 'json'});
+  var pokemonEvolutions = {evolutions:response}
+  return pokemonEvolutions;
 }

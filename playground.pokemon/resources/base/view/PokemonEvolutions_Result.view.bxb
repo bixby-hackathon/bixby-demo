@@ -4,10 +4,22 @@ result-view {
   }
   
   render {
-    layout-macro (pokemon-evolutions-macro) {
-        param (pokemonEvolutions) {
-            expression (this)
-        }
-    }
+    // if ("size(this) > 0") {
+    //   list-of (this) {
+    //     where-each (this) {
+          layout-macro (pokemon-evolutions-macro) {
+            param (this) {
+              expression (this)
+            }
+          }
+    //     }
+    //   }
+    // } else {
+    //   layout-macro (pokemon-evolutions-macro) {
+    //     param (this) {
+    //       expression (this)
+    //     }
+    //   }
+    // }
   }
 }
