@@ -1,0 +1,15 @@
+action (FetchStatsAction) {
+  type(Search)
+  description ("fetch pokemon stats data by preference")
+  collect {
+     input (pref) {
+      type (SearchPrefs)
+      min (Required) max (One)
+    }
+    input (stat) {
+      type (Stats)
+      min (Required) max (One)
+    }
+  }
+  output (Pokemon)
+}
