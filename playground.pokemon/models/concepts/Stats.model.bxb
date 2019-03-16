@@ -1,0 +1,9 @@
+enum (Stats) {
+  description (pokemon stats)
+  symbol (attack)
+  symbol (special-attack)
+  symbol (defense)
+  symbol (special-defense)
+  symbol (hp)
+  symbol (speed)
+}

@@ -110,4 +110,10 @@ structure (Pokemon) {
     type(PokedexNumber)
     min (Optional)
   }
+  
+  property (subtitle) {
+    type (Subtitle)
+    min (Optional)
+  }
 }
+

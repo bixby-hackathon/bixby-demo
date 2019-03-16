@@ -1,0 +1,8 @@
+vocab(Stats){
+  "attack" {"attack"}
+  "special-attack" {"special attack"}
+  "defense" {"defense"}
+  "special-defense" {"special defense"}
+  "hp"{"hp"}
+  "speed" {"speed"}
+}

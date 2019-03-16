@@ -22,7 +22,7 @@ layout-macro-def(pokemon-list-macro) {
         slot2 {
             single-line {
             text {
-                value ("#{value(pokemon.count)} searches")
+                value ("#{value(pokemon.subtitle)}")
                 style (Detail_M_Soft)
             }
             }

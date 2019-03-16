@@ -2,7 +2,7 @@ var console = require('console');
 var http = require('http');
 var config = require('config');
 
-module.exports.function = function findPokemon ($vivContext) {
+module.exports.function = function mostPopular ($vivContext) {
   console.log($vivContext.userId)
   var rand = Math.floor(Math.random()*10000000000000)
   console.log(rand)
