@@ -3,3 +3,8 @@ train (t-lnje574bq0stzizuthlydmotf) {
   plan (Y2BmEE3KrEiqTEmt0MsoKSnQC8jPTs3Nz2OQRBV2y8xLgUkpYNURXJCanJlaHJJaXMLAxMAIxAxAkpEBBKB8AA==)
   last-modified (1552721237340)
 }
+train (t-loy8s262wwxd1kizrlnwxro0w) {
+  utterance ([g:Next10:continue:PopularPokemon] Next 10)
+  plan (Y2BikEnKrEiqTEmt0MsoKSnQC8jPTs3NzwtKLS7NKSlmEEGV9UutKDE0YGAEQgYoBpIA)
+  last-modified (1552840505179)
+}

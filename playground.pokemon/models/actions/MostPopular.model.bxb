@@ -1,6 +1,6 @@
 action (MostPopular) {
   type (Search)
-  output (Pokemon)
+  output (PokemonResults)
   {
     on-empty {
       drop-contextual-inputs

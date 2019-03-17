@@ -25,5 +25,9 @@ endpoints {
      action-endpoint (GetTutorial) {
       local-endpoint (GetTutorial.js)
     }
+    action-endpoint (Next10) {
+      accepted-inputs (pokemonResults, $vivContext)
+      local-endpoint (Next10.js)
+    }
   }
 }

@@ -9,5 +9,5 @@ module.exports.function = function mostPopular ($vivContext) {
   var response = null;
   response  =  http.getUrl(config.get('remote.newPokemonUrl') + '/pokemon/popular?userId='+$vivContext.sessionId+'&rand='+rand+'', { format: 'json'});
   console.log(response);
-  return response;
+  return {pokemons:response.pokemon,offset:response.offset};
 }

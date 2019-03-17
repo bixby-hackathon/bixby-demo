@@ -1,32 +1,44 @@
 result-view {
   match {
-    Pokemon (this)
+    PokemonResults (this)
   }
   
   render {
-    if ("size(this) > 1") {
-      list-of (this) {
+    // if ("size(this.pokemons) > 1") {
+      list-of (this.pokemons) {
         where-each (pokemon) {
           layout-macro (pokemon-list-macro) {
-            param (pokemon) {
-              expression (pokemon)
-            }
+            param (pokemon){expression (pokemon)}
           }
         }
       }
-    } else-if ("size(this) == 1") {
-      layout-macro (pokemon-details-macro) {
-        param (pokemon) {
-          expression (this)
-        }
-      }
-    }
+    // } else-if ("size(this.pokemons) == 1") {
+    //   layout-macro (pokemon-details-macro) {
+    //     param (pokemon)
+    //   }
+    // }
   }
+  
   conversation-drivers {
-    if("size(this)==1"){
+    // if("size(this.pokemons)==1"){
+    //   conversation-driver {
+    //       template ("More Information")
+    //     }
+    // }
+    if("this.offset > 0"){
       conversation-driver {
-          template ("More Information")
+          template ("Last 10")
         }
     }
+    if("this.offset < 800"){
+      conversation-driver {
+          template ("Next 10")
+        }
+    }
+    // if("this[0].name == 'eevee'"){
+    //   conversation-driver {
+    //       template ("Here is an eevee")
+    //     }
+    // }
   }
 }

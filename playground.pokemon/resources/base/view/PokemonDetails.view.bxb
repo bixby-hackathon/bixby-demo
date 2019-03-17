@@ -1,0 +1,17 @@
+result-view {
+  match {
+    Pokemon (this)
+  }
+
+  render {
+    layout-macro (pokemon-details-macro) {
+      param (pokemon){expression (this)}
+    }
+  }
+
+  conversation-drivers {
+    conversation-driver {
+      template ("More Information")
+    }
+  }
+}
