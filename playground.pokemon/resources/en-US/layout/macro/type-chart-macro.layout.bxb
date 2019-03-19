@@ -12,31 +12,9 @@ layout-macro-def(type-chart-macro) {
       content{
         paragraph{
           value{
-            template ("Weak to:")
+            template ("Resistances")
           }
-          style (Title_XS)
-        }
-        divider
-        partitioned {
-          content {
-            for-each (this.weaknesses) {
-              as (weakness) {
-                single-line {
-                  text  {
-                    value ("#{value(weakness.multiplier)}x #{title(weakness.type)}")
-                    style (Detail_L_Soft)
-                  }
-                }
-              }
-            }
-          }
-        }
-        divider
-        paragraph{
-          value{
-            template ("Resists:")
-          }
-          style (Title_XS)
+          style (Title_S)
         }
         divider
         partitioned {
@@ -44,9 +22,12 @@ layout-macro-def(type-chart-macro) {
             for-each (this.resistances) {
               as (resistance) {
                 single-line {
-                  text  {
-                    value ("#{value(resistance.multiplier)}x #{title(resistance.type)}")
-                    style (Detail_L_Soft)
+                  image {
+                    url("#{title(resistance.multiplier)}")
+                  }
+                  spacer
+                  image {
+                    url("#{title(resistance.type)}")
                   }
                 }
               }
@@ -56,9 +37,9 @@ layout-macro-def(type-chart-macro) {
         divider
         paragraph{
           value{
-            template ("Neutral To:")
+            template ("Neutral")
           }
-          style (Title_XS)
+          style (Title_S)
         }
         divider
         partitioned {
@@ -66,9 +47,38 @@ layout-macro-def(type-chart-macro) {
             for-each (this.neutral) {
               as (neutral) {
                 single-line {
-                  text  {
-                    value ("#{value(neutral.multiplier)}x #{title(neutral.type)}")
-                    style (Detail_L_Soft)
+                  image {
+                    url("#{title(neutral.multiplier)}")
+                  }
+                  spacer
+                  image {
+                    url("#{title(neutral.type)}")
+                  }
+                }
+              }
+            }
+          }
+        }
+        divider
+        paragraph{
+          value{
+            template ("Weaknesses")
+          }
+          style (Title_S)
+        }
+        divider
+        partitioned {
+          content {
+            for-each (this.weaknesses) {
+              as (weakness) {
+                single-line {
+
+                  image {
+                    url("#{title(weakness.multiplier)}")
+                  }
+                  spacer
+                  image {
+                    url("#{title(weakness.type)}")
                   }
                 }
               }
