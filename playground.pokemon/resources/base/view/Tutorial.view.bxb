@@ -10,4 +10,14 @@ result-view {
       }
     }
   }
+
+  conversation-drivers {
+
+    conversation-driver {
+      template ("Pikachu")
+    }
+    conversation-driver {
+      template ("Random Pokemon")
+    }
+  }
 }
