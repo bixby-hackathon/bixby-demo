@@ -1,11 +1,18 @@
 structure (PokemonResults) {
-  description (__DESCRIPTION__)
-  property (pokemons) {
+  property (pokemon) {
     type (Pokemon)
     min (Optional) max (Many)
   }
   property (offset) {
     type(Offset)
+    min (Optional) max (One)
+  }
+  property (sortBy) {
+    type(SortBy)
+    min (Optional) max (One)
+  }
+  property (sort) {
+    type(Sort)
     min (Optional) max (One)
   }
 }

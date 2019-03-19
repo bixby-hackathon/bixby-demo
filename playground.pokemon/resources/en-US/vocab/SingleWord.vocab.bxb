@@ -1,0 +1,12 @@
+vocab(SingleWord) {
+  "strongest" {"strongest"}
+    "weakest" {"weakest"}
+      "toughest" {"toughest"}
+        "wimpiest" {"wimpiest"}
+          "slowest" {"slowest"}
+            "fastest" {"fastest" "speediest" "speedy"}
+              "smartest" {"smart" "smartest" "intelligent"}
+                "dumbest" {"dumbest" "stupidest"}
+                  "cutest" {"cutest" "adorable" "adorablest"}
+                    "ugliest" {"ugliest" "ugly"}
+                    }

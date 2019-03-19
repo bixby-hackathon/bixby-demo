@@ -191,7 +191,7 @@ layout-macro-def(pokemon-details-macro) {
           right {
               input-cell {
               label {
-                  template ("Special Attack")
+                  template ("Speed")
               }
               value {
                   template ("#{value(pokemon.statSpeed)}")

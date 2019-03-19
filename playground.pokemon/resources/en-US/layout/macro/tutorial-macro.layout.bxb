@@ -12,8 +12,28 @@ layout-macro-def(tutorial-macro) {
       content{
         paragraph{
           value{
-            template ("#{value(this.tutorial1)}") 
+            template ("#{value(this.tutorial1)}")
           }
+          style (Title_M)
+        }
+        paragraph{
+          value{
+            template ("Just ask Bixby-dex to show you a specific Pokemon and Bixby-dex will try its best to show you that Pokemon")
+          }
+          style (Detail_M_Soft)
+        }
+
+        paragraph{
+          value{
+            template ("Jigglypuff")
+          }
+          style (Title_M)
+        }
+        paragraph{
+          value{
+            template ("You can just say the name of the Pokemon and Bixby-dex will find it for you!")
+          }
+          style (Detail_M_Soft)
         }
 
         paragraph{

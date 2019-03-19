@@ -1,7 +1,0 @@
-dialog (Result) {
-  match: Pokemon (this) {
-    from-output: FetchStatsAction (action)
-    min (Required) max (Many)
-  }
-  template("Bixby-dex show u Pokemons on your preferences")
-}

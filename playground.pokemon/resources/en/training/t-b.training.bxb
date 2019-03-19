@@ -1,7 +1,7 @@
 train (t-bifg88da3pv8r97npsn493afr) {
   utterance ([g:GetTutorial] Bixbydex)
   plan (Y2BiEEvKrEiqTEmt0MsoKSnQCyktyS/KTMxhkEQVd08tgUsxAiEDFANJAA==)
-  last-modified (1552772586395)
+  last-modified (1552952106489)
 }
 train (t-bydqf3gkmz8r2lrj3zcf2h1c1) {
   utterance ("[g:FindPokemon] (charmeleon)[v:PokemonSpeciesTest]")

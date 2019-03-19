@@ -6,15 +6,15 @@ module.exports.function = function fetchAttack(pref, stat, $vivContext) {
   console.log($vivContext.userId)
   var rand = Math.floor(Math.random() * 10000000000000)
   var response = null;
-  var stat = '/pokemon/stats/' + stat.toLowerCase().replace('-', '');
+  var stat = '/pokemon/rank/' + stat.toLowerCase().replace('-', '');
   var sort = 'sort=' + pref.toLowerCase();
-  response = http.getUrl(config.get('remote.newPokemonUrl') 
-                + stat
-                + '?'
-                + sort
-                + '&userId=' 
-                + $vivContext.sessionId 
-                + '&rand=' 
-                + rand , {format: 'json'});
+  var url = config.get('remote.newPokemonUrl') 
+          + stat
+          + '?'
+          + sort
+          + '&rand=' + rand
+  console.log(url)
+  response = http.getUrl(url, {format: 'json'});
+  // return {pokemons:response.pokemon, offset:response.offset, sortBy:response.sortBy};
   return response;
 }

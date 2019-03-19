@@ -1,0 +1,7 @@
+dialog (Progress) {
+  match: PokemonSpeciesTest (this) {
+    // from-input: pokemonName (name)
+    min (Optional) max (One)
+  }
+  template("Bixby-dex is looking for u a #{value(this)}")
+}

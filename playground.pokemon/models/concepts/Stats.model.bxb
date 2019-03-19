@@ -7,4 +7,5 @@ enum (Stats) {
   symbol (hp)
   symbol (speed)
   symbol (total)
+  symbol (popularity)
 }

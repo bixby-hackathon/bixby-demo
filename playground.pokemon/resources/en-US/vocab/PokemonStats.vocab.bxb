@@ -1,9 +1,10 @@
 vocab(Stats){
   "attack" {"attack"}
-  "special-attack" {"special attack"}
+  "special-attack" {"special attack" "specialattack"}
   "defense" {"defense"}
-  "special-defense" {"special defense"}
-  "hp"{"hp"}
+  "special-defense" {"special defense" "specialdefense"}
+  "hp"{"hp", "h p", "hit points" "hitpoints"}
   "speed" {"speed"}
   "total" {"total" "total stats"}
+  "popularity" {"popularity" "popular"}
 }

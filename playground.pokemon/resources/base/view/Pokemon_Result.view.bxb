@@ -5,7 +5,7 @@ result-view {
   
   render {
     // if ("size(this.pokemons) > 1") {
-      list-of (this.pokemons) {
+      list-of (this.pokemon) {
         where-each (pokemon) {
           layout-macro (pokemon-list-macro) {
             param (pokemon){expression (pokemon)}
@@ -27,7 +27,7 @@ result-view {
     // }
     if("this.offset > 0"){
       conversation-driver {
-          template ("Last 10")
+          template ("Previous 10")
         }
     }
     if("this.offset < 800"){

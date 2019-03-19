@@ -1,0 +1,59 @@
+dialog (Result) {
+  match: PokemonResults (this) {
+    from-output: SingleWordFetchStats (action)
+    min (Required) max (One)
+    }
+  if (this.sortBy == 'popularity') {
+    if (this.sort == 'highest'){
+      template("Bixby-dex show u some Pokemon who are well loved.")
+      // template("Bixby-dex show u some Pokemon who are well loved. Unlike Bixby-dex.")
+    } else {
+      template("Bixby-dex feels good to show you some Pokemon even less popular than Bixby-dex")
+    }
+  } else-if (this.sortBy == 'hp'){
+    if (this.sort == 'highest'){
+      template("Bixby-dex show u some super beefy Pokemon")
+    } else {
+      template("Bixby-dex show u Pokemon that would faint to a light breeze")
+    }
+  } else-if (this.sortBy == 'attack'){
+    if (this.sort == 'highest'){
+      template("Bixby-dex show u Pokemon that hurt. A lot")
+    } else {
+      template("Bixby-dex show u Pokemon that hit like wet noodles")
+    }
+  } else-if (this.sortBy == 'defense'){
+    if (this.sort == 'highest'){
+      template("Bixby-dex show u Pokemon who don't mind getting mega punched") // needs work
+    } else {
+      template("Bixby-dex feels bad for these Pokemon if they get tackled")
+    }
+  } else-if (this.sortBy == 'specialattack'){
+    if (this.sort == 'highest'){
+      template("Bixby-dex show u Pokemon good at messing you up with big brains or something")
+    } else {
+      template("Bixby-dex show u Pokemon who has less brains than bixby-dex")
+    }
+  } else-if (this.sortBy == 'specialdefense'){
+    if (this.sort == 'highest'){
+      template("Bixby-dex show u Pokemon who resist smartness")
+    } else {
+      template("Bixby-dex show u Pokemon who are scared of big brains.")
+      // template("Bixby-dex show u Pokemon who are scared of big brains. Is that why none of them are scared of         Bixby-dex?")
+    }
+  } else-if (this.sortBy == 'speed'){
+    if (this.sort == 'highest'){
+      template("Bixby-dex show u super fast Pokemon. Whoa! Where did they go?!")
+    } else {
+      template("Bixby-dex. show. you. some. Pokemon. who. are. a. little. sloooooooow...")
+    }
+  } else-if (this.sortBy == 'total'){
+    if (this.sort == 'highest'){
+      template("Bixby-dex show u god, and some others that can destroy EVERYTHING!")
+    } else {
+      template("Bixby-dex feels bad for these Pokemon for even existing.")
+    }
+  } else {
+    template("Bixby-dex show u Pokemons on your preferences")
+  }
+}

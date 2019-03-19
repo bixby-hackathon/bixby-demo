@@ -1,4 +1,4 @@
-module.exports.function = function getTutorial () {
+module.exports.function = function getTutorial (bixbydex) {
   const tutorial = {
     tutorial1: "Show me a Pikachu",
     tutorial2: "Show me a random Pokemon",
