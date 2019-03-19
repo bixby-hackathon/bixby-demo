@@ -8,3 +8,8 @@ train (t-loy8s262wwxd1kizrlnwxro0w) {
   plan (Y2BikEnKrEiqTEmt0MsoKSnQC8jPTs3NzwtKLS7NKSlmEEGV9UutKDE0YGAEQgYoBpIA)
   last-modified (1552956082273)
 }
+train (t-lt25ggra6of9og1gipwd61lgl) {
+  utterance ([g:GetEvolutions:continue:FindPokemon] Evolutions)
+  plan (Y2BikE/KrEiqTEmt0MsoKSnQC8jPTs3Nz3Mty88pLcnMzytmkEZV4J5agiTJCIQMUAwkAQ==)
+  last-modified (1552957867982)
+}

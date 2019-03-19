@@ -9,4 +9,8 @@ enum (SingleWord) {
   symbol (dumbest)
   symbol (cutest)
   symbol (ugliest)
+  symbol (tallest)
+  symbol (shortest)
+  symbol (heaviest)
+  symbol (lightest)
 }

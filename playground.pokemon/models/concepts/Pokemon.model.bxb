@@ -91,8 +91,8 @@ structure (Pokemon) {
     min (Optional)
   }
   property (ability2){
-      type(Ability2)
-      min (Optional)
+    type(Ability2)
+    min (Optional)
   }
   property (ability2Description){
     type(Ability2Description)
@@ -114,9 +114,12 @@ structure (Pokemon) {
     type(PokedexNumber)
     min (Optional)
   }
-  
   property (subtitle) {
     type (Subtitle)
+    min (Optional)
+  }
+  property (searchedFor) {
+    type (SearchedFor)
     min (Optional)
   }
 }

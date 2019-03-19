@@ -20,7 +20,6 @@ layout-macro-def(pokemon-evolutions-macro) {
                   image-card {
                     aspect-ratio (21:9)
                     image-object-fit (Contain)
-
                     title-area {
                       halign (Start)
                       slot1 {
@@ -29,23 +28,9 @@ layout-macro-def(pokemon-evolutions-macro) {
                           style (Title_XS)
                         }
                       }
-                      // slot2 {
-                      //   single-line{
-                      //     text {
-                      //       value ("evolves into")
-                      //       style (Detail_M_Soft)
-                      //     }
-                      //   }
-                      // }
                     }
                     image-url ("#{value(evolution.nameSprite)}")
                   }         
-                  // single-line{
-                  //   text {
-                  //     value ("evolves into")
-                  //     style (Detail_M_Soft)
-                  //   }
-                  // }
                   image-card {
                     aspect-ratio (21:9)
                     image-object-fit (Contain)
@@ -74,6 +59,12 @@ layout-macro-def(pokemon-evolutions-macro) {
         else{
           paragraph{
             value("This Pokemon has no evolutions")
+            style(Title_S)
+          }
+          image{
+            url("/images/throwpikachu.gif")
+            object-fit (Contain)
+            aspect-ratio(16:9)
           }
         }
       } 

@@ -11,7 +11,10 @@ result-view {
 
   conversation-drivers {
     conversation-driver {
-      template ("More Information")
+      template ("Evolutions")
+    }
+    conversation-driver {
+      template ("Type Chart")
     }
   }
 }

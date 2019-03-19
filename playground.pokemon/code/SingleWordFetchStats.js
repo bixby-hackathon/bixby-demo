@@ -48,6 +48,23 @@ module.exports.function = function fetchAttack(singleWord, $vivContext) {
     stat = '/pokemon/rank/popularity';
     sort = 'sort=lowest';
   }
+    if(singleWord == "tallest"){
+    stat = '/pokemon/rank/height';
+    sort = 'sort=highest';
+  }
+  if(singleWord == "shortest"){
+    stat = '/pokemon/rank/height';
+    sort = 'sort=lowest';
+  }
+  if(singleWord == "heaviest"){
+    stat = '/pokemon/rank/weight';
+    sort = 'sort=highest';
+  }
+  if(singleWord == "lightest"){
+    stat = '/pokemon/rank/weight';
+    sort = 'sort=lowest';
+  }
+  
   var url = config.get('remote.newPokemonUrl') 
   + stat
   + '?'

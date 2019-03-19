@@ -1,0 +1,11 @@
+result-view {
+  match {
+    TypeChart (this)
+  }
+
+  render {
+    layout-macro (type-chart-macro) {
+      param (this){expression (this)}
+    }
+  }
+}

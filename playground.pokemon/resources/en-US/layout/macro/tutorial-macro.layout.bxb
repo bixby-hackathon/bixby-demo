@@ -10,6 +10,13 @@ layout-macro-def(tutorial-macro) {
   content {
     section{
       content{
+        single-line {
+          image{
+            url(/images/bixbydex.png)
+            style(Title_XXL)
+          }
+        }
+
         paragraph{
           value{
             template ("#{value(this.tutorial1)}")

@@ -8,4 +8,6 @@ enum (Stats) {
   symbol (speed)
   symbol (total)
   symbol (popularity)
+  symbol (height)
+  symbol (weight)
 }

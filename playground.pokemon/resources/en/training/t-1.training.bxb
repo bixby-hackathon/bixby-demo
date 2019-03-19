@@ -1,8 +1,3 @@
-train (t-11l7gquvpxd6vme6celf8jye9) {
-  utterance ([g:GetEvolutions:continue:FindPokemon] find evolutions)
-  plan (Y2BiUCzISaxML8ovzUvRyygpKdALyM9Ozc3Pcy3LzyktyczPK2aQRVfinlqCJM0IhAxQDCQB)
-  last-modified (1552436026280)
-}
 train (t-1y60e8qh8ke5ppz14xz6mtbme) {
   utterance ("[g:FetchStatsAction] Show me the Pokemon with the (least)[v:SearchPrefs:lowest] (special attack)[v:Stats:special-attack]")
   plan (Y2BhkEnKrEiqTEmt0MsoKSnQC8jPTs3NzwtKLS7NKSlmkEOVdUstSc4ILkksKXZMLsnMz2OQRJUPTk0sSs4IKEpNK2YQRpMC6WJgZmBkYAKSDEAaBCEALgoA)

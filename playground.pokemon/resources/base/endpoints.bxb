@@ -6,9 +6,17 @@ endpoints {
       accepted-inputs (pokemonName, $vivContext)
       local-endpoint (FindPokemon.js)
     }
+    action-endpoint (WhichPokemon) {
+      accepted-inputs (pokemonName, $vivContext)
+      local-endpoint (WhichPokemon.js)
+    }
     action-endpoint (GetEvolutions) {
       accepted-inputs (pokemon, $vivContext)
       local-endpoint (GetEvolutions.js)
+    }
+    action-endpoint (GetTypeChart) {
+      accepted-inputs (pokemon, $vivContext)
+      local-endpoint (GetTypeChart.js)
     }
     action-endpoint (FindRandomPokemon) {
       accepted-inputs ($vivContext)

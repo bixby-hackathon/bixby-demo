@@ -7,4 +7,6 @@ vocab(Stats){
   "speed" {"speed"}
   "total" {"total" "total stats"}
   "popularity" {"popularity" "popular"}
+  "height" {"height" "tallness"}
+  "weight" {"weight" "heaviness"}
 }
