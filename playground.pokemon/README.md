@@ -1,65 +1,44 @@
-<p align="Center">
-  <img src="https://bixbydevelopers.com/dev/docs-assets/resources/dev-guide/bixby_logo_github-11221940070278028369.png">
-  <br/>
-  <h1 align="Center">HTTP API Calls</h1>
-</p>
+# Bixby Pokemon Backend
 
-### Simple find shoe with HTTP get call
-intent {
-  goal: FindShoe
-}
+Built this to format the data for easier consumption in Bixby.
 
-### HTTP call with query param
-intent {
-  goal: FindShoeFiltering
-  value: Type(Formal)
-}
+Current BixbyDéx commands:
 
-### HTTP call that returns an error
-intent {
-  goal: FindShoeError
-}
+Search for one Pokemon
 
-### HTTP use that includes headers
-intent {
-  goal: FindShoeReturnHeaders
-}
+- "Pikachu"
+- "Char lizard"
+- "Bulb a sore"
+- "Show me a Jigglypuff"
+- "Show me a Gyro dos"
+- "Show me a Tent a cool"
 
-### HTTP post call
-intent {
-  goal: CreateShoe
-}
+Show a random Pokemon
 
-### Remote endpoint
-intent {
-  goal: FindShoeRemoteEndpoint
-}
+- "Random Pokemon"
+- "Show me a random Pokemon"
 
-### Coming soon: More complicated remote endpoint
+Show Pokemon ranked based on:
 
-##
+- "Show me the Pokemon with the (highest/lowest) (popularity/hit points/attack/defense/special attack/special defense/speed)
+- "Show me the strongest Pokemon"
+- "Show me the weakest Pokemon"
+- "Slowest Pokemon"
+- "Fastest Pokemon"
 
-For more information see - https://bixbydevelopers.com/dev/docs/sample-capsules/samples/http
+Show Evolutions -> Continuation of a Pokemon
 
----
+- "Evolutions"
 
-## Additional Resources
+Show Type Chart -> Continuation of a Pokemon
 
-### Your Source for Everything Bixby
-* [Bixby Developer Center](http://bixbydevelopers.com) - Everything you need to get started with Bixby Development!
+- "Type Chart"
+- Need to consider making these continuations in one step, like show evolutions of Pikachu
+  Show tutorial
+- "BixbyDéx"
+- "Bixby decks"
 
-### Guides & Best Practices
-* [Quick Start Guide](https://bixbydevelopers.com/dev/docs/get-started/quick-start) - Build your first capsule
-* [Design Guides](https://bixbydevelopers.com/dev/docs/dev-guide/design-guides) - Best practices for designing your capsules
-* [Developer Guides](https://bixbydevelopers.com/dev/docs/dev-guide/developers) - Guides that take you from design and modeling all the way through deployment of your capsules
+Which Pokemon does someone resemble?
 
-### Video Guides
-* [Introduction to Bixby](https://youtu.be/DFvpK4PosvI) - Bixby and the New Exponential Frontier of Intelligent Assistants
-* [Bixby Fundamentals](https://bixby.developer.samsung.com/newsroom/en-us/22/01/2019/Teaching-Bixby-Fundamentals-What-You-Need-to-Know) - Bixby Fundamentals: What You Need to Know
-
-### Need Support?
-* Have a feature request? Please suggest it in our [Support Community](https://support.bixbydevelopers.com/hc/en-us/community/topics/360000183273-Feature-Requests) to help us prioritize.
-* Have a technical question? Ask on [Stack Overflow](https://stackoverflow.com/questions/tagged/bixby) with tag “bixby”
-
-
-
+- "Which Pokemon is Jonathan Pan?" (one to three word names)
+- "What Pokemon does Katy Perry look like?" (one to three word names)
