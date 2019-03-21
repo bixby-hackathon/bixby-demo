@@ -1,6 +1,4 @@
-# Bixby Pokemon Backend
-
-Built this to format the data for easier consumption in Bixby.
+# BixbyDéx
 
 Current BixbyDéx commands:
 
