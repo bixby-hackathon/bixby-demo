@@ -149,7 +149,7 @@ layout-macro-def(tutorial-macro) {
 
         paragraph{
           value{
-            template ("BixbyDéx is based on Sun & Moon and is a free, unofficial, fan made capsule. BixbyDéx has no affiliation and is not supported by GAME FREAK, Nintendo, or the Pokémon company. Some images used are copyrighted and supported under fair use. Pokémon and Pokémon character names are trademarks of Nintendo. No copyright infringement intended. ©2002-2019 Pokémon. ©1995-2019 Nintendo/Creatures Inc/GAME FREAK inc.")
+            template ("BixbyDéx is based on Pokémon Sun & Moon and is a free, unofficial, fan made capsule. BixbyDéx has no affiliation and is not supported by GAME FREAK, Nintendo, or the Pokémon company. Some images used are copyrighted and supported under fair use. Pokémon and Pokémon character names are trademarks of Nintendo. No copyright infringement intended. ©2002-2019 Pokémon. ©1995-2019 Nintendo/Creatures Inc/GAME FREAK inc.")
           }
           style (Detail_M_Soft)
         }
