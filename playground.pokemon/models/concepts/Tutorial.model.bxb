@@ -16,6 +16,10 @@ structure (Tutorial) {
     type (Tutorial4)
     min (Required) max (One)
   }
+  property (tutorial4Line2) {
+    type (Tutorial4Line2)
+    min (Optional) max (One)
+  }
   property (tutorial5) {
     type (Tutorial5)
     min (Required) max (One)

@@ -1,0 +1,5 @@
+train (t-y9znkme62pm86uvytju5a3xga) {
+  utterance ("[g:FindPokemon] show me a (ray choo)[v:PokemonSpeciesTest]")
+  plan (Y2BmEE3KrEiqTEmt0MsoKSnQC8jPTs3Nz2OQRBV2y8xLgUkpYNURXJCanJlaHJJaXMLAxMAIxAxAkpEBBKB8AA==)
+  last-modified (1553137901157)
+}

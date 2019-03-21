@@ -9,10 +9,9 @@ vocab(SingleWord) {
                 "dumbest" {"dumbest" "stupidest"}
                   "cutest" {"cutest" "adorable" "adorablest"}
                     "ugliest" {"ugliest" "ugly"}
-                                        "heaviest" {"heaviest" "fatest"}
-                                        "lightest" {"lightest" "fatest"}
-                        
-                    "tallest" {"tallest"}
-                                        "shortest" {"shortest" "tiniest"}
-                          
-                    }
+                      "heaviest" {"heaviest" "fatest" "fattest"}
+                        "lightest" {"lightest" "fatest"}
+                          "tallest" {"tallest"}
+                            "shortest" {"shortest" "tiniest"}
+
+                            }

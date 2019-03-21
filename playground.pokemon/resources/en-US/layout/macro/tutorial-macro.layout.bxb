@@ -10,61 +10,142 @@ layout-macro-def(tutorial-macro) {
   content {
     section{
       content{
-        single-line {
+        single-line{
           image{
             url(/images/bixbydex.png)
             style(Title_XXL)
           }
+
+        }
+        image{
+          url(/images/pikachu.gif)
+          aspect-ratio(16:9)
+          object-fit (Cover)
+        }
+
+        cell-card {
+          on-click{
+            intent{
+              goal: FindPokemon
+              value: PokemonSpeciesTest(pikachu)
+            }
+          }
+          slot2 {
+            content {
+              order (PrimarySecondary)
+              primary ("#{value(this.tutorial1)}")
+            }
+          }
+        }
+        paragraph{
+          value{
+            template ("BixbyDéx can show you some stuff about Pokémon. \"Show me a Jigglypuff\" and \"Jigglypuff\" are both valid ways to ask BixbyDéx to show you a Jigglypuff.")
+          }
+          style (Detail_L_Soft)
+        }
+
+        cell-card {
+          on-click{
+            intent{
+              goal: WhichPokemon
+              value: PokemonSpeciesTest(Ranold McDernald)
+            }
+          }
+          slot2 {
+            content {
+              order (PrimarySecondary)
+              primary ("\"Which Pokemon looks like...")
+              secondary ("Ranold McDernald\"")
+            }
+          }
+        }
+        paragraph{
+          value{
+            template ("You can ask BixbyDéx to compare people to Pokémon! Try asking BixbyDéx \"Which Pokémon does Bob Marley look like?\" or \"Which Pokemon does Rebecca Black look like?\". You might be shocked to find out which Pokémon you resemble!")
+          }
+          style (Detail_L_Soft)
+        }
+
+        cell-card {
+          on-click{
+            intent{
+              goal: SingleWordFetchStats
+              value: SingleWord(cutest)
+            }
+          }
+          slot2 {
+            content {
+              order (PrimarySecondary)
+              primary ("#{value(this.tutorial3)}")
+            }
+          }
+        }
+        paragraph{
+          value{
+            template ("You can ask BixbyDéx to sort Pokemon based on certain attributes. For example, \"Show me the Pokemon with the highest attack\". You can sort Pokémon by hit points, attack, defense, special attack, special defense, speed, total stats, height, weight, and popularity.")
+          }
+          style (Detail_L_Soft)
+        }
+
+        cell-card {
+          on-click{
+            intent{
+              goal: SingleWordFetchStats
+              value: SingleWord(strongest)
+            }
+          }
+          slot2 {
+            content {
+              order (PrimarySecondary)
+              primary ("#{value(this.tutorial4)}")
+            }
+          }
+        }
+        paragraph{
+          value{
+            template ("Here's an example for of when you're looking for the Pokémon with the highest total stats.")
+          }
+          style (Detail_L_Soft)
+        }
+
+        cell-card {
+          on-click{
+            intent{
+              goal: FindRandomPokemon
+            }
+          }
+          slot2 {
+            content {
+              order (PrimarySecondary)
+              primary ("#{value(this.tutorial2)}")
+            }
+          }
+        }
+        paragraph{
+          value{
+            template ("Not sure what to ask BixbyDéx to show you? Have no fear, just ask BixbyDéx for a random Pokémon!")
+          }
+          style (Detail_L_Soft)
         }
 
         paragraph{
           value{
-            template ("#{value(this.tutorial1)}")
+            template ("BixbyDéx is here for 2% of your Pokémon needs! Some Pokémon are a little harder for BixbyDéx to catch. Try getting BixbyDéx to show you a Gardevoir with just your voice. You may find it amusingly challenging 🙃 or begrudgingly frustrating 😡")
           }
-          style (Title_M)
-        }
-        paragraph{
-          value{
-            template ("Just ask Bixby-dex to show you a specific Pokemon and Bixby-dex will try its best to show you that Pokemon")
-          }
-          style (Detail_M_Soft)
+          style (Detail_L)
         }
 
         paragraph{
           value{
-            template ("Jigglypuff")
+            template ("We know that was a lot to take in. Hopefully you don't feel as overwhelmed as this Pikachu. Good luck and have fun!")
           }
-          style (Title_M)
+          style (Detail_L)
         }
-        paragraph{
-          value{
-            template ("You can just say the name of the Pokemon and Bixby-dex will find it for you!")
-          }
-          style (Detail_M_Soft)
+        image{
+          url(/images/pikachu2.gif)
+          aspect-ratio(16:9)
+          object-fit (Cover)
         }
-
-        paragraph{
-          value{
-            template ("#{value(this.tutorial2)}") 
-          }
-        }
-        paragraph{
-          value{
-            template ("#{value(this.tutorial3)}") 
-          }
-        }
-        paragraph{
-          value{
-            template ("#{value(this.tutorial4)}") 
-          }
-        }
-        paragraph{
-          value{
-            template ("#{value(this.tutorial5)}") 
-          }
-        }
-
-
 
       }
     }

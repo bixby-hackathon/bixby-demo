@@ -1,3 +1,8 @@
+train (t-4abjdroe4fn822nvdspbzprnu) {
+  utterance ("[g:WhichPokemon] which pokemon looks like (bob marley the second)[v:PokemonSpeciesTest]")
+  plan (Y2BmEE3KrEiqTEmt0MsoKSnQC8jPTs3Nz2OQQhUOz8hMzoDJKWDVElyQmpyZWhySWlzCwMTACMQMQJKRAQSgfAA=)
+  last-modified (1553138553916)
+}
 train (t-4vm5iuffqmb2fvpuvj0oaw2f3) {
   utterance ("[g:FetchStatsAction] (highest)[v:SearchPrefs:highest] (attack)[v:Stats:attack] pokemon")
   last-modified (1552772186628)

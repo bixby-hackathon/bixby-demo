@@ -5,41 +5,40 @@ dialog (Result) {
     }
   if (this.sortBy == 'popularity') {
     if (this.sort == 'highest'){
-      template("BixbyDéx show u some Pokemon who are well loved.")
-      // template("BixbyDéx show u some Pokemon who are well loved. Unlike BixbyDéx.")
+      // template("BixbyDéx show u some Pokemon who are well loved.")
+      template("BixbyDéx show u some Pokemon who are well loved. Unlike BixbyDéx.")
     } else {
-      template("BixbyDéx feels good to show you some Pokemon even less popular than BixbyDéx")
+      template("BixbyDéx feels good to show you some Pokemon even less popular than BixbyDéx.")
     }
   } else-if (this.sortBy == 'hp'){
     if (this.sort == 'highest'){
-      template("BixbyDéx show u some super beefy Pokemon")
+      template("BixbyDéx show you some super beefy Pokemon.") // revisit this
     } else {
-      template("BixbyDéx show u Pokemon that would faint to a light breeze")
+      template("BixbyDéx show you Pokemon that would faint to a light breeze.")
     }
   } else-if (this.sortBy == 'attack'){
     if (this.sort == 'highest'){
-      template("BixbyDéx show u Pokemon that hurt. A lot")
+      template("BixbyDéx show you Pokemon that hurt. A lot.")
     } else {
-      template("BixbyDéx show u Pokemon that hit like wet noodles")
+      template("BixbyDéx show you Pokemon that hit like wet noodles.")
     }
   } else-if (this.sortBy == 'defense'){
     if (this.sort == 'highest'){
-      template("BixbyDéx show u Pokemon who don't mind getting mega punched") // needs work
+      template("BixbyDéx show you Pokemon who don't mind getting mega punched.") // needs work
     } else {
-      template("BixbyDéx feels bad for these Pokemon if they get tackled")
+      template("BixbyDéx feels bad for these Pokemon if they get hit by splash.")
     }
   } else-if (this.sortBy == 'specialattack'){
     if (this.sort == 'highest'){
-      template("BixbyDéx show u Pokemon good at messing you up with big brains or something")
+      template("BixbyDéx show you Pokemon good at messing you up with big brain, or something.") // notPC?
     } else {
-      template("BixbyDéx show u Pokemon who has less brains than BixbyDéx")
+      template("BixbyDéx show you Pokemon who has less brains than BixbyDéx.")
     }
   } else-if (this.sortBy == 'specialdefense'){
     if (this.sort == 'highest'){
-      template("BixbyDéx show u Pokemon who resist smartness")
+      template("BixbyDéx show you Pokemon who resist smartness.")
     } else {
-      template("BixbyDéx show u Pokemon who are scared of big brains.")
-      // template("BixbyDéx show u Pokemon who are scared of big brains. Is that why none of them are scared of         BixbyDéx?")
+      template("BixbyDéx show you Pokemon who are scared of big brains.")
     }
   } else-if (this.sortBy == 'speed'){
     if (this.sort == 'highest'){
@@ -49,23 +48,23 @@ dialog (Result) {
     }
   } else-if (this.sortBy == 'total'){
     if (this.sort == 'highest'){
-      template("BixbyDéx show u god, and some others that can destroy EVERYTHING!")
+      template("BixbyDéx show you \"God\", and some others that can destroy EVERYTHING!")
     } else {
       template("BixbyDéx feels bad for these Pokemon for even existing.")
     }
   } else-if (this.sortBy == 'height'){
     if (this.sort == 'highest'){
-      template("BixbyDéx show u some Pokemon that will never find pants that fit them")
+      template("BixbyDéx show you some Pokemon that will never find pants that fit them.")
     } else {
-      template("BixbyDéx show u that size doesn't matter for these Pokemon")
+      template("BixbyDéx show you that size doesn't matter. Period.")
     }
   } else-if (this.sortBy == 'weight'){
     if (this.sort == 'highest'){
-      template("BixbyDéx show u some Pokemon with their own orbiting celestial bodies")
+      template("BixbyDéx show you some Pokemon with their own orbiting celestial bodies.")
     } else {
-      template("BixbyDéx show u Pokemon who get whisked away by the slightest breeze")
+      template("BixbyDéx show you Pokemon who get whisked away by the slightest breeze.") // weaker
     }
   } else {
-    template("BixbyDéx show u Pokemons on your preferences")
+    template("BixbyDéx show you some Pokemon based on your preferences")
   }
 }

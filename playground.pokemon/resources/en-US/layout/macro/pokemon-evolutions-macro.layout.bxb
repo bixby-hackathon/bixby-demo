@@ -13,7 +13,7 @@ layout-macro-def(pokemon-evolutions-macro) {
       content{
         if(size(this.evolutions)>0){
           for-each (this.evolutions) {
-            as (evolution) 
+            as (evolution)
             {
               compound-card{
                 content{

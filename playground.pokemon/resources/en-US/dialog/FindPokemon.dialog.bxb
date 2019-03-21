@@ -4,21 +4,23 @@ dialog (Result) {
   }
   // template("BixbyDéx show u [#{title(this.name)}]")
   if (this.message == 1){
-  template("A wild [#{title(this.name)}] has appeared!")
+  template("A wild [#{title(this.name)}] appeared!")
   } else-if(this.message == 2) {
-    template("BixbyDéx found this [#{title(this.name)}] for you")
+    template("BixbyDéx found this [#{title(this.name)}] for you.")
   } else-if(this.message == 3) {
-    template("BixbyDéx caught for you this [#{title(this.name)}]")
+    template("BixbyDéx caught this [#{title(this.name)}] for you.")
   } else-if(this.message == 4) {
-    template("BixbyDéx defenestrates this [#{title(this.name)}]")
+    template("BixbyDéx defenestrates this [#{title(this.name)}].")
   } else-if(this.message == 5) {
-    template("BixbyDéx pets this [#{title(this.name)}]")
+    template("BixbyDéx petted this [#{title(this.name)}] for you.")
   } else-if(this.message == 6) {
-    template("BixbyDéx seismic tosses [#{title(this.name)}]")
+    template("BixbyDéx seismic tosses this [#{title(this.name)}] at you.")
   } else-if(this.message == 7) {
-    template("BixbyDéx licks this [#{title(this.name)}]")
+    template("BixbyDéx sends out [#{title(this.name)}].")
   } else-if(this.message == 8) {
-    template("BixbyDéx sets [#{title(this.name)}] free T_T")
+    template("BixbyDéx sets [#{title(this.name)}] free 😭")
+  } else-if(this.message == 9) {
+    template("[#{title(this.name)}]! I choose you!")
   }
 }
 

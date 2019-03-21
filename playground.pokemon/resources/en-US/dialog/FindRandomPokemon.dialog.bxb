@@ -14,5 +14,13 @@ dialog (Result) {
     template("BixbyDéx ate this [#{title(this.name)}] for breakfast.")
   } else-if(this.message == 6) {
     template("BixbyDéx almost got killed by [#{title(this.name)}].")
+  } else-if(this.message == 7) {
+    template("[#{title(this.name)}] fell on BixbyDéx.")
+  } else-if(this.message == 8) {
+    template("BixbyDéx used its only Masterball on [#{title(this.name)}].")
+  } else-if(this.message == 9) {
+    template("BixbyDéx got confused by [#{title(this.name)}]. BixbyDéx hit itself in its confusion.")
+  } else-if(this.message == 10) {
+    template("BixbyDéx vehemently suggests bringing [#{title(this.name)}] to beat the Elite 4.")
   }
 }

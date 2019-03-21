@@ -3,7 +3,7 @@ dialog (Result) {
     from-output: GetTutorial (action)
   }
   // template("Bixby-dex show u [#{title(this.name)}]")
-  template("Hi, I'm BixbyDéx. I know roughly 2% of all things Pokemon related. Try out one of the following commands:")
+  template("Hi, I'm BixbyDéx. I know roughly 2% of all things Pokemon related. Try out one of the following commands.")
 }
 
 

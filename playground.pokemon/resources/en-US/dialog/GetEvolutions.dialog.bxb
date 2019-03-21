@@ -3,7 +3,7 @@ dialog (Result) {
     from-output: GetEvolutions (action)
   }
   if(size(this.evolutions)>0){
-    template("BixbyDéx show u evolution chain of #{title(this.name)}")
+    template("BixbyDéx shows you the evolution chain of #{title(this.name)}")
   } else {
     template("BixbyDéx found out something shocking about #{title(this.name)}")
   }

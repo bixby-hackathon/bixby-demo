@@ -5,20 +5,18 @@ dialog (Result) {
   if (this.message == 1){
     template("Wait, is that #{title(this.searchedFor)} or is that #{title(this.name)}? I can't tell!")
   } else-if(this.message == 2) {
-    template("#{title(this.searchedFor)} looks stunningly like #{title(this.name)}")
+    template("#{title(this.searchedFor)} looks stunningly like #{title(this.name)}.")
   } else-if(this.message == 3) {
     template("Is #{title(this.name)} actually #{title(this.searchedFor)} in disguise?")
   } else-if(this.message == 4) {
     template("Are #{title(this.searchedFor)} and #{title(this.name)} identical twins?")
     // template("BixbyDéx thinks #{title(this.searchedFor)} is a good nickname for #{title(this.name)}")
   } else-if(this.message == 5) {
-    template("The resemblance between #{title(this.searchedFor)} and #{title(this.name)} is uncanny")
+    template("The resemblance between #{title(this.searchedFor)} and #{title(this.name)} is uncanny.")
   } else-if(this.message == 6) {
     template("Do I need glasses? Or do #{title(this.searchedFor)} and #{title(this.name)} look indisguishable from each other?")
   } else-if(this.message == 7) {
-    template("Do I need glasses? Or do #{title(this.searchedFor)} and #{title(this.name)} look indisguishable from each other?")
-  } else-if(this.message == 8) {
-    template("Did a wild ditto appear? Oh wait, that's just #{title(this.searchedFor)}.")
+    template("Did a wild Ditto appear? Oh wait, that's just #{title(this.searchedFor)} and #{title(this.name)}.")
   }
 }
 

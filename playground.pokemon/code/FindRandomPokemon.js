@@ -7,8 +7,8 @@ module.exports.function = function findRandomPokemon($vivContext) {
   var response = http.getUrl(config.get('remote.newPokemonUrl') + '/pokemon/random/1?userId=' + $vivContext.userId + '&rand=' + rand + '', {
     format: 'json'
   });
-  response.message = Math.floor(Math.random() * 6 + 1);
-  // response.message = 6;
+  response.message = Math.floor(Math.random() * 10 + 1);
+  // response.message = 10;
   console.log(response.toString());
   return response;
 }
