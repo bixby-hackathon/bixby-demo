@@ -8,7 +8,6 @@ module.exports.function = function findRandomPokemon($vivContext) {
     format: 'json'
   });
   response.message = Math.floor(Math.random() * 10 + 1);
-  // response.message = 10;
-  console.log(response.toString());
+  // response.message = 8;
   return response;
 }

@@ -7,6 +7,6 @@ module.exports.function = function findPokemon (pokemonName, $vivContext) {
   var noSpaces = pokemonName.replace(/ /g,"-");
   var response = http.getUrl(config.get('remote.newPokemonUrl') + '/pokemon/one/'+noSpaces+'?userId='+$vivContext.userId+'+&rand='+rand+'', { format: 'json'});
   response.message = Math.floor(Math.random()*7+1);
-  // response.message = 8;
+  // response.message = 6;
   return response;
 }

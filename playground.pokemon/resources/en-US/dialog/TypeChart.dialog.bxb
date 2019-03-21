@@ -2,5 +2,5 @@ dialog (Result) {
   match: TypeChart (this) {
     from-output: GetTypeChart (action)
   }
-  template("BixbyDéx show u type chart for #{title(this.name)}")
+  template("BixbyDéx show you type chart for #{title(this.name)}")
 }

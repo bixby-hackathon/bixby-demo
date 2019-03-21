@@ -5,8 +5,8 @@ dialog (Result) {
     }
   if (this.sortBy == 'popularity') {
     if (this.sort == 'highest'){
-      // template("BixbyDéx show u some Pokemon who are well loved.")
-      template("BixbyDéx show u some Pokemon who are well loved. Unlike BixbyDéx.")
+      // template("BixbyDéx show you some Pokemon who are well loved.")
+      template("BixbyDéx show you some Pokemon who are well loved. Unlike BixbyDéx.")
     } else {
       template("BixbyDéx feels good to show you some Pokemon even less popular than BixbyDéx.")
     }
@@ -42,7 +42,7 @@ dialog (Result) {
     }
   } else-if (this.sortBy == 'speed'){
     if (this.sort == 'highest'){
-      template("BixbyDéx show u super fast Pokemon. Whoa! Where did they go?!")
+      template("BixbyDéx show you super fast Pokemon. Whoa! Where did they go?!")
     } else {
       template("BixbyDéx. show. you. some. Pokemon. who. are. a. little. sloooooooow...")
     }
