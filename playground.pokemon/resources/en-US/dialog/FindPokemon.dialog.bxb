@@ -2,7 +2,7 @@ dialog (Result) {
   match: Pokemon (this) {
     from-output: FindPokemon (action)
   }
-  // template("BixbyDéx show u [#{title(this.name)}]")
+  // template("BixbyDéx show you [#{title(this.name)}]")
   if (this.message == 1){
   template("A wild [#{title(this.name)}] appeared!")
   } else-if(this.message == 2) {

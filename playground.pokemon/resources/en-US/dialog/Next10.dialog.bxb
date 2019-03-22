@@ -2,5 +2,5 @@ dialog (Result) {
   match: PokemonResults (this) {
     from-output: Next10 (action)
   }
-  template("BixbyDéx show u next 10 Pokemon")
+  template("BixbyDéx show you next 10 Pokemon")
 }

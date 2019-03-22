@@ -3,5 +3,5 @@ dialog (Progress) {
     // from-input: pokemonName (name)
     min (Optional) max (One)
   }
-  template("BixbyDéx is looking for u a #{value(this)}")
+  template("BixbyDéx is looking for you a #{value(this)}")
 }
