@@ -1,0 +1,21 @@
+description {
+  displayName (SM Pokedex)
+  companyName (jonmpan)
+  iconUrl (/images/bixbydex.png)
+  description (A fan made, non-profit, Pokedex, based on Pokemon.)
+  websiteUrl (https://www.jonmpan.com)
+  search-keywords {
+    keyword (Pokemon)
+    keyword (Pokedex)
+    keyword (Pikachu)
+    keyword (Nintendo)
+    keyword (poke)
+    keyword (Niantec)
+  }
+  dispatch-name (SM Pokedex)
+  dispatch-aliases {
+    alias (Sun and Moon Pokedex)
+  }
+  actionBgColor (#BF2519)
+  actionFgColor (#FFFFFF)
+}

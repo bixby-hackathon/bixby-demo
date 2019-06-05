@@ -1,10 +1,18 @@
 capsule {
-  id (bixbydex.http)
-  version (1.0.2)
+  id (sm_pokedex.production)
+  version (1.0.3)
   format (3)
   targets {
     target (bixby-mobile-en-US)
   }
   capsule-imports {
+  }
+  runtime-flags {
+    concepts-inherit-super-type-features
+    modern-prompt-rejection
+    support-halt-effect-in-computed-inputs
+  }
+  store-sections {
+    section (GamesAndFun)
   }
 }

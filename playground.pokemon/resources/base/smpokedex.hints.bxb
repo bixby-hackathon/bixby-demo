@@ -1,0 +1,9 @@
+hints {
+  uncategorized {
+    utterance (show me a Pikachu)
+    utterance (show me a random Pokemon)
+    utterance (show me the strongest Pokemon)
+    utterance (which pokemon looks like a pidgeon)
+    utterance (which pokemon does Neil Patrick Harris resemble?)
+  }
+}
